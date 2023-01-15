@@ -1,0 +1,35 @@
+.cont-contac{
+    width: 60vh;
+    margin: auto;
+}
+
+.cont-contac h1{
+    margin-left: 35%;
+}
+
+.cont-contac input{
+    border: none;
+    border-radius: 3px;
+    padding: 8px;
+    margin: 2vh;
+}
+
+.cont-contac textarea{
+    margin-left: 2vh;
+    border: none;
+    border-radius: 3px;
+}
+
+.cont-contac .botones{
+    width: 12vh;
+    border: none;
+    border-radius: 0.3vh;
+    background-color: rgb(100, 180, 255);
+    color: aliceblue;
+}
+
+.cont-contac .botones:hover{
+    transition: 0.3s;
+    opacity: 0.8;
+    font-style: oblique;
+}

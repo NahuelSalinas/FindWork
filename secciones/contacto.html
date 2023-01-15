@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Trabajos</title>
+    <title>FindWork</title>
 
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="/css/principal.css">
-    <link rel="stylesheet" href="/css/blog.css">
-    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/contacto.css">
 
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
@@ -29,11 +27,11 @@
 
                 <nav>
                     <ul>
-                        <li><a href="/index.html"><i class="fas fa-home"></i>Inicio</a></li>
+                        <li><a href="/index.html"> <i class="fas fa-home"></i>Inicio</a></li>
                         <li><a href="contacto.html"> <i class="fas fa-headset"> </i>Contacto</a></li>
                         <li class="menu-selected"><a href="trabajos.html" class="text-menu-selected"> 
                             <i class="fas fa-file-alt"></i>Trabajos</a></li>
-                        <li><a href="#"> <i class="fa fa-user-circle"></i><b>Iniciar Sesión</b></a></li>
+                        <li><a href="login.html"> <i class="fa fa-user-circle"></i><b>Iniciar Sesión</b></a></li>
                     </ul>
                 </nav>
 
@@ -66,58 +64,32 @@
         <li><a href="articulo.html"><i class="fas fa-search"></i>Como hacer</a></li>
         <li><a href="articulo.html"><i class="fas fa-search"></i>Como crear</a></li>
     </ul>
-    
+
     <div id="cover-ctn-search"></div>
-    <div class="container-all" id="move-content">
-        <br><br><br>
+    <div class="container-all" id="move-content"></div>
 
-    <!--Formulario-->
 
-    <main>
+    <!--Contenidos-->
+    <br><br><br><br><br><br>
+    <div class="cont-contac">
+        <h1>Contacto</h1><br>
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="email" name="mail" placeholder="E-mail" required>
+        <input type="text" name="asunto" placeholder="Asunto" required><br>
+        <textarea name="mensaje" cols="58" rows="9">Mensaje</textarea><br>
+        <input class="botones" type="reset" value="Borrar">
+        <input class="botones" type="submit" value="Enviar">
 
-        <div class="contenedor__todo">
-            <div class="caja__trasera">
-                <div class="caja__trasera-login">
-                    <h3>¿Ya tienes una cuenta?</h3>
-                    <p>Inicia sesión para entrar en la página</p>
-                    <button id="btn__iniciar-sesion">Iniciar Sesión</button>
-                </div>
-                <div class="caja__trasera-register">
-                    <h3>¿Aún no tienes una cuenta?</h3>
-                    <p>Regístrate para que puedas iniciar sesión</p>
-                    <button id="btn__registrarse">Regístrarse</button>
-                </div>
-            </div>
+    </div>
 
-            <!--Formulario de Login y registro-->
-            <div class="contenedor__login-register">
-                <!--Login-->
-                <form action="" class="formulario__login">
-                    <h2>Iniciar Sesión</h2>
-                    <input type="text" placeholder="Correo Electronico">
-                    <input type="password" placeholder="Contraseña">
-                    <button>Entrar</button>
-                </form>
 
-                <!--Register-->
-                <form action="" class="formulario__register">
-                    <h2>Regístrarse</h2>
-                    <input type="text" placeholder="Nombre completo">
-                    <input type="text" placeholder="Correo Electronico">
-                    <input type="text" placeholder="Usuario">
-                    <input type="password" placeholder="Contraseña">
-                    <button>Regístrarse</button>
-                </form>
-            </div>
-        </div>
 
-    </main>
-
-    <!--Fin del Formulario-->
-    
     <div class="container-footer">	
 
         <footer>
+            <div class="logo-footer">
+                <img src="img/logo-magtimus-pro-.png" alt="">
+            </div>
 
             <div class="redes-footer">
                 <a href="#"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
@@ -127,13 +99,12 @@
 
             <hr>
             <h4>© 2023 Nahuel Salinas - Todos los Derechos Reservados</h4>
-
         </footer>
 
     </div>
 
 </div>
-    <script src="/js/login.js"></script>
+
     <script src="/js/script.js"></script>
 </body>
 </html>
