@@ -1,0 +1,102 @@
+.cont-crear{
+    margin: auto;
+    padding: 3vh;
+    width: 53vh;
+    background-color: rgba(62, 210, 255, 0.781);
+    border-radius: 1vh;
+}
+
+.cont-crear h1{
+    align-self: center;
+    color: white;
+}
+
+.cont-crear h3{
+    color: white;
+    opacity: 0.9;
+}
+
+.cont-crear h4{
+    color: white;
+    opacity: 0.9;
+}
+.cont-crear span{
+    color: white;
+    opacity: 0.4;
+}
+
+.cont-crear .inpu{
+    border: none;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    padding: 6px;
+    border-radius: 0.5vh;
+    width: 39vh;
+}
+
+.cont-crear textarea{
+    border: none;
+    width: 39vh;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    padding: 6px;
+    border-radius: 0.5vh;
+}
+
+.cont-crear .check{
+    font-weight: 800;
+    color: white;
+    opacity: 0.9;
+}
+
+.cont-crear #imagen{
+    width: 66%;
+    border-radius: 0.5vh;
+    min-height: 12vh;
+    background-color: white;
+    text-align: center;
+}
+
+.cont-crear .selector select{
+    border: none;
+    border-radius: 0.5vh;
+    padding: 0.5vh;
+}
+
+.cont-crear .botones{
+    border: none;
+    border-radius: 0.5vh;
+    width: 10vh;
+    padding: 8px;
+    margin-right: 2vh;
+    background-color: rgb(241, 248, 255);
+}
+
+.cont-crear .botones:hover{
+    transition: 0.3s;
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 851px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .cont-crear{
+        width: 46vh;
+    }
+
+    .cont-crear textarea{
+        width: 39vh;
+    }
+
+    .cont-crear .inpu{
+        border: none;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        padding: 6px;
+        border-radius: 3px;
+        width: 39vh;
+    }
+}
