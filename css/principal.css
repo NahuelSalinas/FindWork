@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root{
     --color-primary:#46a2fd;
     --bg-color: #e5e5e6;    
@@ -202,74 +206,6 @@ header{
     display: none;
 }
 
-/*/////////PUBLICACIONES//////////*/
-.publicaciones{
-    width: 90%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.una-publicacion{
-    margin: auto;
-    background-color: #ffffff;
-    width: 17em;
-}
-
-.una-publicacion img{
-    width: 17em;
-    height: fit-content;
-}
-
-.una-publicacion{
-    border-radius: .8rem;
-    box-shadow: .2em 0.4em .3em rgba(0,0,0,.2), 0 -.3em;
-}
-
-.una-publicacion:hover{
-    box-shadow: .2em 0.4em .3em rgba(0, 0, 0, 0.452), 0 -.3em;
-    transition: .4s;
-}
-
-.una-publicacion .texto-publicacion{
-    width: 80%;
-    margin: auto;
-}
-
-.una-publicacion button{
-    font-size: 1em;
-    padding: .5em;
-    width: 70%;
-    border: none;
-    border-radius: .4em;
-    background-color: var(--color-primary);
-    color: var(--bg-color);
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    margin-top: 1.4em;
-    margin-bottom: 1.4em;
-}
-
-.una-publicacion button:hover{
-    background-color: var(--bg-color);
-    color: var(--color-primary);
-    transition: .4s;
-}
-
-.una-publicacion span{
-    opacity: .8;
-}
-
-.una-publicacion h2{
-    text-align: center;
-}
-
-.una-publicacion p{
-    text-align: justify;
-    text-indent: 1em;
-    width: 81%;
-} 
 /*Footer - pie de pagina*/
 
 .container-footer{

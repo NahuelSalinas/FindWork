@@ -1,5 +1,10 @@
+:root{
+    --color-primary:#46a2fd;
+    --bg-color: #e5e5e6;    
+}
+
 .cont-contac{
-    width: 60vh;
+    width: fit-content;
     margin: auto;
 }
 
@@ -9,27 +14,31 @@
 
 .cont-contac input{
     border: none;
-    border-radius: 3px;
-    padding: 8px;
-    margin: 2vh;
+    border-radius: .3em;
+    padding: .6em;
+    margin: 1em;
 }
 
 .cont-contac textarea{
-    margin-left: 2vh;
+    margin-left: 1em;
     border: none;
-    border-radius: 3px;
+    opacity: .8;
+    text-indent: .6em;
+    border-radius: .3em;
+    width: 95%;
 }
 
 .cont-contac .botones{
-    width: 12vh;
+    width: 10em;
     border: none;
     border-radius: 0.3vh;
-    background-color: rgb(100, 180, 255);
-    color: aliceblue;
+    background-color: var(--color-primary);
+    color: var(--bg-color);
 }
 
 .cont-contac .botones:hover{
     transition: 0.3s;
     opacity: 0.8;
-    font-style: oblique;
+    background-color: var(--bg-color);
+    color: var(--color-primary);
 }
