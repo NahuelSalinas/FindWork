@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+	<title>search-svg</title>
+	<defs>
+		<image  width="16" height="16" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IB2cksfwAAANJQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////GP/UYgAAAEZ0Uk5TAESt/f/5lh4Bm+txCnbnBoOlDA2pqDnQAgRDrFyq6RzhB/XfI9akZ2+hOOUmpwPkEJ6+Pr/OEUqiz/jgsDTI0hUP0dgXFDB+Sl8AAACbSURBVHicVYtrF4FAEEAH23qtEKklEuVNyCvPiP//l5zd1h7Nh3t375kBAMhkc0jBeRBTKJbKBEhFxdUk1Ooad6Opc7cMU6xSo83UsX63YHUZe7YMdp9RcWRwBoxDVwbXYxyNZZhMGWcqEX8yX3Dj5Yrb1P118thsAwo02Plof0h2j6fwfLnetDt6RPA/zxeK36ny8ZCRChDF4RfmMgw9w7VW1wAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Layer" href="#img1" x="0" y="0"/>
+</svg>
