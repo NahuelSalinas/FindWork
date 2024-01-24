@@ -2,138 +2,112 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Trabajos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/ico/logo.png" type="image/x-icon">
 
-    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
     
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/principal.css">
-    <link rel="stylesheet" href="/css/blog.css">
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/login.css">
 
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-
+    <title>Inicio</title>
 </head>
 <body>
+    <nav>
+        <h3><a class="textoGradiente" href="/index.html">Find<b>Work</b></a></h3>
+        <ul>
+            <li><a class="animated-underline" href="/index.html">Volver</a></li>
+        </ul>
+    </nav>
 
-    <!--Header - menu-->
-    <header>
+    <br><br>
+    <span class="blur"></span>
+    <span class="blur"></span>
+    <br><br><br><br><br><br><br><br>
 
-        <div class="header-content">
+    <section class="registro">
+        <form action="">
+            <h2>Iniciar Sesión</h2>
+            <input type="email" name="mailLgn" id="mailLgn" placeholder="Ingrese su correo" required><br>
+            <input type="password" name="passwordLgn" id="passwordLgn" placeholder="Ingrese su contraseña" required><br>
+            <p>Recuerde no compartir estos datos</p>
+            <button id="btnLgn">Aceptar</button>
+        </form>
+        <h5>Si no tienes una cuenta puedes registrarte</h5>
+        <form action="">
+            <h2>Registrarse</h2>
+            <input type="email" placeholder="Ingrese un correo" required><br>
+            <input type="password" name="" id="" placeholder="Ingrese una contraseña" required><br>
+            <input type="password" name="" id="" placeholder="Repita su contraseña" required><br>
+            <button>Aceptar</button>
+        </form>
+    </section>
 
-            <div class="logo">
-                <h1>Find<a>Work</a></h1>
-            </div>
+   <br><br><br><br><br><br><br><br><br><br><br>
 
-            <div class="menu" id="show-menu">
-
-                <nav>
-                    <ul>
-                        <li><a href="/index.html"><i class="fas fa-home"></i>Inicio</a></li>
-                        <li><a href="contacto.html"> <i class="fas fa-headset"> </i>Contacto</a></li>
-                        <li class="menu-selected"><a href="trabajos.html" class="text-menu-selected"> 
-                            <i class="fas fa-file-alt"></i>Trabajos</a></li>
-                        <li><a href="#"> <i class="fa fa-user-circle"></i><b>Iniciar Sesión</b></a></li>
-                    </ul>
-                </nav>
-
-            </div>
-
-            <div id="ctn-icon-search">
-                <i class="fas fa-search" id="icon-search"></i>
-            </div>
-
+   <footer class="container">
+    <span class="blur"></span>
+    <span class="blur"></span>
+    <div class="column">
+        <div class="logo">
+            <img src="/img/ico/logo.png" alt="logo">
         </div>
-
-        <div id="icon-menu">
-            <i class="fas fa-bars"></i>
+        <p>
+            Información de contacto
+        </p>
+        <div class="socials">
+            <!-- <a href="#"><i class="ri-youtube-line"></i></a> -->
+            <a href="https://www.instagram.com/nahhhhhuel/"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-twitter-line"></i></a>
         </div>
-
-    </header>
-
-
-    <div id="ctn-bars-search">
-        <input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
     </div>
-
-    <ul id="box-search">
-        <li><a href="articulo.html"><i class="fas fa-search"></i>HTML</a></li>
-        <li><a href="articulo.html"><i class="fas fa-search"></i>CSS</a></li>
-        <li><a href="articulo.html"><i class="fas fa-search"></i>JavaScript</a></li>
-        <li><a href="articulo.html"><i class="fas fa-search"></i>PHP</a></li>
-        <li><a href="articulo.html"><i class="fas fa-search"></i>NODEJS</a></li>
-        <li><a href="articulo.html"><i class="fas fa-search"></i>VUEJS</a></li>
-        <li><a href="articulo.html"><i class="fas fa-search"></i>Como hacer</a></li>
-        <li><a href="articulo.html"><i class="fas fa-search"></i>Como crear</a></li>
-    </ul>
-    
-    <div id="cover-ctn-search"></div>
-    <div class="container-all" id="move-content">
-        <br><br><br>
-
-    <!--Formulario-->
-
-    <main>
-
-        <div class="contenedor__todo">
-            <div class="caja__trasera">
-                <div class="caja__trasera-login">
-                    <h3>¿Ya tienes una cuenta?</h3>
-                    <p>Inicia sesión para entrar en la página</p>
-                    <button id="btn__iniciar-sesion">Iniciar Sesión</button>
-                </div>
-                <div class="caja__trasera-register">
-                    <h3>¿Aún no tienes una cuenta?</h3>
-                    <p>Regístrate para que puedas iniciar sesión</p>
-                    <button id="btn__registrarse">Regístrarse</button>
-                </div>
-            </div>
-
-            <!--Formulario de Login y registro-->
-            <div class="contenedor__login-register">
-                <!--Login-->
-                <form action="" class="formulario__login">
-                    <h2>Iniciar Sesión</h2>
-                    <input type="text" placeholder="Correo Electronico">
-                    <input type="password" placeholder="Contraseña">
-                    <button>Entrar</button>
-                </form>
-
-                <!--Register-->
-                <form action="post" class="formulario__register">
-                    <h2>Regístrarse</h2>
-                    <input type="text" placeholder="Nombre completo">
-                    <input type="text" placeholder="Correo Electronico">
-                    <input type="text" placeholder="Usuario">
-                    <input type="password" placeholder="Contraseña">
-                    <button>Regístrarse</button>
-                </form>
-            </div>
-        </div>
-
-    </main>
-
-    <!--Fin del Formulario-->
-    
-    <div class="container-footer">	
-
-        <footer>
-
-            <div class="redes-footer">
-                <a href="#"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
-                <a href="#"><i class="fab fa-google-plus-g icon-redes-footer"></i></a>
-                <a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
-            </div>
-
-            <hr>
-            <h4>© 2023 Nahuel Salinas - Todos los Derechos Reservados</h4>
-
-        </footer>
-
+    <div class="column">
+        <h4>Experiencia</h4>
+        <a href="#">Desarrollador Frontend - FANIoT</a>
+        <a href="#">Líder del equipo de desarrollo en ModBox - E.P.E.T N°1</a>
     </div>
+    <div class="column">
+        <h4>Sobre Nosotros</h4>
+        <a href="#">Blogs</a>
+        <a href="#">Canales</a>
+        <a href="#">Patrocinadores</a>
+    </div>
+    <div id="contacto" class="column">
+        <h4>Contacto</h4>
+        <a href="#">+54 3765-019128</a>
+        <a href="#">nahuelllsalinas@gmail.com</a>
+    </div>
+</footer>
 
+<div class="copyright">
+    Copyright © 2024 Equipo de Desarrollo de FindWork. Todos los derechos reservados.
 </div>
-    <script src="/js/login.js"></script>
-    <script src="/js/script.js"></script>
+
+<script src="/js/slider.js"></script>
+<script>
+    // validar contraseña 
+    document.addEventListener('DOMContentLoaded', function() {
+  const password = document.getElementById("passwordLgn");
+  const mail = document.getElementById("mailLgn");
+  const btn = document.getElementById("btnLgn");
+
+  btn.addEventListener('click', function(){
+    const mailTrue = 'nahuelllsalinas@gmail.com';
+    const passTrue = '123456';
+    if(mail.value == mailTrue && password.value == passTrue){
+      /* window.location.href='../index.html'; */
+      window.location.href='https://aprenderaprogramar.com';
+    } else {
+      alert('Contraseña o correo incorrectos');
+    }
+  });
+});
+</script>
 </body>
 </html>
