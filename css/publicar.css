@@ -1,0 +1,84 @@
+:root{
+    --colorPrincipal: #eff3f2;
+    --colorSecundario: #362f2f;
+    --colorTerciario: #144357;
+}
+
+.containerFormulario{
+    width: 36em;
+    height: auto;
+    padding: 2em;
+    display: block;
+    justify-content: space-around;
+    border-radius: .3em;
+    background-color: var(--colorTerciario);
+    color: var(--colorPrincipal);
+    box-shadow: 0em .2em 1.5em  .1em #105c4971;
+    margin: auto;
+}
+
+    .containerFormulario h3{
+        letter-spacing: .1em;
+        padding: .3em;
+    }
+
+    .containerFormulario input[type='text']{
+        border: none;
+        outline: none;
+        margin-bottom: 1em;
+        border-radius: .2em;
+
+    }
+
+    .containerFormulario textarea{
+        width: 60%;
+        resize: none;
+        height: 8em;
+        overflow: hidden;
+        font-family: 'Arial', sans-serif;
+        border: none;
+        outline: none;
+        border-radius: .2em;
+        margin-bottom: 1em;
+    }
+
+    .containerFormulario select{
+        border: none;
+        border-radius: .2em;
+        padding: .2em .3em;
+        margin-bottom: 1em;
+    }
+
+    .containerFormulario input[type='file']{
+        border: none;
+        border-radius: .2em;   
+    }
+
+    .containerFormulario input[type='file']:hover{
+        cursor: pointer;
+    }
+
+    .containerFormulario .btns{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .containerFormulario .btns input{
+        width: 80%;
+        margin: auto;
+        border: .15em solid var(--colorPrincipal);
+        color: #eff3f2;
+        border-radius: .2em;
+        padding: .3em .4em;
+        background-color: #0000;
+        outline: none;
+    }
+
+    .containerFormulario .btns input:hover{
+        border-color: var(--colorSecundario);
+        background-color: #213e4b;
+        color: #03d6a1;
+        transition: .4s;
+    }
+        
+    

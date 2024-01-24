@@ -11,15 +11,23 @@ form{
     justify-content: space-around;
     border-radius: .3em;
     background-color: var(--colorTerciario);
-    box-shadow: 0em 0em .5em #ebf3f196;
+    box-shadow: 0em .2em 1.5em  .1em #105c4971;
     margin: auto;
 }
 
     form input[type="text"]{
+        outline: none;
         border: none;
+        background-color: #0000;
+        color: var(--colorPrincipal);
+        opacity: .8;
         border-radius: .2em;
         width: 100%;
         padding: .4em;
+    }
+
+    form input[type="text"]::placeholder{
+      color: #559b89;
     }
 
     form button{
@@ -61,6 +69,12 @@ form{
             animation: cambioDeColor 5s infinite;
         }
 
+        .card:hover{
+          transform: scale(1.03);
+          transition: .2s;
+          box-shadow: 0 0 .8em #2b0808;
+        }
+
         @keyframes cambioDeColor {
             0% {
               border-color: #ece551;
@@ -93,15 +107,16 @@ form{
             border-radius: .4em;
             background-color: #0000;
             padding: .5em;
-            cursor: cell;
+            cursor: alias;
             border: .15em solid #c1cec7bb;
             /* background-color: var(--colorTerciario); */
             color: var(--colorPrincipal);
         }
 
         .card button:hover{
-            filter: brightness(120%);
             transition: .4s;
+            border-color: var(--colorSecundario);
+            letter-spacing: .05em;
         }
 
         #mas{
@@ -137,7 +152,6 @@ form{
         position: absolute;
         top: 0;
         left: 0;
-      
         width: inherit;
         height: inherit;
         transform-origin: left 50%;
@@ -177,10 +191,8 @@ form{
         height: 10px;
         margin-right: 4px;
         border-radius: 20px;
-      
         background: hsla(0 0% 90% / .3);
         cursor: pointer;
-      
         position: relative;
         z-index: 10;
       }
@@ -223,6 +235,8 @@ form{
         background-image: linear-gradient(45deg, #ece551, #f80dec);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        transform: scale(1.05);
+        filter: brightness(120%);
         transition: .4s;
     }
 
@@ -239,7 +253,23 @@ form{
 
     #publicar button:hover{
         animation: cambioDeColor 5s infinite;
-        filter: brightness(90%);
+        filter: brightness(115%);
         transition: .3s;
+        box-shadow: 0em 0 1.4em #0b1f27da;
+        transform: scale(1.05);
+    }
+
+    .acciones img{
+      display: block;
+      margin: auto;
+      width: 12em;
+      height: fit-content;
+    }
+
+    .acciones img:hover{
+      filter: drop-shadow(0 0 .8em #1d1010);
+      cursor: crosshair;
+      transition: .4s;
+      transform: scale(1.05);
     }
       

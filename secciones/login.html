@@ -32,7 +32,8 @@
     <br><br><br><br><br><br><br><br>
 
     <section class="registro">
-        <form action="">
+        <form action="" onsubmit="return false;">
+            <!-- El return false se puede quitar al momento de trabajar con un BD real -->
             <h2>Iniciar Sesión</h2>
             <input type="email" name="mailLgn" id="mailLgn" placeholder="Ingrese su correo" required><br>
             <input type="password" name="passwordLgn" id="passwordLgn" placeholder="Ingrese su contraseña" required><br>
@@ -90,24 +91,6 @@
 </div>
 
 <script src="/js/slider.js"></script>
-<script>
-    // validar contraseña 
-    document.addEventListener('DOMContentLoaded', function() {
-  const password = document.getElementById("passwordLgn");
-  const mail = document.getElementById("mailLgn");
-  const btn = document.getElementById("btnLgn");
-
-  btn.addEventListener('click', function(){
-    const mailTrue = 'nahuelllsalinas@gmail.com';
-    const passTrue = '123456';
-    if(mail.value == mailTrue && password.value == passTrue){
-      /* window.location.href='../index.html'; */
-      window.location.href='https://aprenderaprogramar.com';
-    } else {
-      alert('Contraseña o correo incorrectos');
-    }
-  });
-});
-</script>
+<script src="/js/login.js"></script>
 </body>
 </html>
