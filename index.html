@@ -1,148 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>FindWork</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/ico/logo.png" type="image/x-icon">
 
-    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="css/principal.css">
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
 
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-
+    <title>FindWork</title>
 </head>
 <body>
+    <nav>
+        <h3><a class="textoGradiente" href="">Find<b>Work</b></a></h3>
+        <ul>
+            <li><a class="animated-underline" href="#contacto">Contacto</a></li>
+            <li><a class="animated-underline" href="#servicios">Servicios</a></li>
+            <li><a id="loginBtn" href="">Iniciar Sesión</a></li>
+        </ul>
+    </nav>
 
-    <!--Header - menu-->
-    <header>
-        <div class="header-content">
 
-            <div class="logo">
-                <h1>Find<a href="/index.html">Work</a></h1>
-            </div>
-            <div class="menu" id="show-menu">
 
-                <nav>
-                    <ul>
-                        <li><a href="index.html"> <i class="fas fa-home"></i>Inicio</a></li>
-                        <li><a href="secciones/contacto.html"> <i class="fas fa-headset"> </i>Contacto</a></li>
-                        <li class="menu-selected"><a href="/secciones/trabajos.html" class="text-menu-selected"> 
-                            <i class="fas fa-file-alt"></i>Trabajos</a></li>
-                        <li><a href="/secciones/login.html"> <i class="fa fa-user-circle"></i><b>Iniciar Sesión</b></a></li>
-                    </ul>
-                </nav>
+    <br><br>
+    <span class="blur"></span>
+    <span class="blur"></span>
+    
+    <section id="presentacion">
+        <div class="texto">
+            <h1 class="textoGradiente">¡Bienvenido a FindWork!</h1>
+            <h2>El lugar donde encuentras a la persona ideal para el trabajo que necesitas.</h2>
+        </div>
+        <div class="image">
+            <img src="img/grupo-de-trabajo.png" alt="">
+        </div>
+    </section>
 
-            </div>
+    <br><br><br>
 
-            <div id="ctn-icon-search">
-                <i class="fas fa-search" id="icon-search"></i>
-            </div>
+   <section id="servicios">
+      <div class="texto">
+        <h1 id="gradienteH1">¿Qué ofrecemos?</h1>
+        <h2>Encuentra personas calificadas para cada una de las tareas o necesidades que se presenten en tu día a día. 
+          O bien, ofrece tus servicios como trabajador para que demás personas puedan contratarte.</h2>
+      </div>
 
+      <br><br><br>
+
+      <div class="tarjetas">
+        <div class="tarjeta">
+          <img src="img/publicar.png" alt="">
+          <span>Publica</span>
+          <p>Da a conocer tu habilidad para realizar una labor.</p>
+          <br>
+          <button class="draw"></button>
+          <br>
         </div>
 
-        <div id="icon-menu">
-            <i class="fas fa-bars"></i>
+        <div class="tarjeta">
+            <img src="img/contrato.png" alt="...">
+            <span>Contrata</span>
+            <p>Busca y contrata a los mejores profesionales para realizar el trabajo que necesitas.
+            <br><br>
+            <button class="draw"></button>
+          </div>
+      </div>
+
+      <br><br><br>
+
+   </section>
+
+   <br><br><br><br><br><br><br><br><br><br><br>
+
+   <footer class="container">
+    <span class="blur"></span>
+    <span class="blur"></span>
+    <div class="column">
+        <div class="logo">
+            <img src="img/ico/logo.png" alt="logo">
         </div>
-
-    </header>
-
-
-    <div id="ctn-bars-search">
-        <input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
+        <p>
+            Información de contacto
+        </p>
+        <div class="socials">
+            <!-- <a href="#"><i class="ri-youtube-line"></i></a> -->
+            <a href="https://www.instagram.com/nahhhhhuel/"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-twitter-line"></i></a>
+        </div>
     </div>
-
-    <ul id="box-search">
-        <li><a href="articulo.html"><i class="fas fa-search"></i>HTML</a></li>
-        <li><a href="articulo.html"><i class="fas fa-search"></i>CSS</a></li>
-        <li><a href="articulo.html"><i class="fas fa-search"></i>JavaScript</a></li>
-        <li><a href="articulo.html"><i class="fas fa-search"></i>PHP</a></li>
-        <li><a href="articulo.html"><i class="fas fa-search"></i>NODEJS</a></li>
-        <li><a href="articulo.html"><i class="fas fa-search"></i>VUEJS</a></li>
-        <li><a href="articulo.html"><i class="fas fa-search"></i>Como hacer</a></li>
-        <li><a href="articulo.html"><i class="fas fa-search"></i>Como crear</a></li>
-    </ul>
-
-    <div id="cover-ctn-search"></div>
-
-    <div class="container-all" id="move-content">
-
-        <!--Portada-->
-        
-        <div class="blog-container-cover">
-            <div class="container-info-cover">
-                <h1>¡Bienvenido a FindWork!</h1>
-                <p>El espacio en el que los clientes pueden contactar directamente con los trabajadores, y viceversa. Para empezar, elije una de las opciones de abajo.</p>
-            </div>
-        </div>
-
-        <div class="posts">
-
-            <div class="post" data-category="CSS">
-
-                <div class="ctn-img">
-                    <img src="img/iconos/usuario.png" alt="">
-                </div>
-                <span>Inicie sesión para acceder a los servicios que necesite</span><br>
-                <div class="cont-button">
-                    <a href="secciones/login.html">Iniciar Sesión</a>
-                </div>
-
-            </div>
-
-            <div class="post" data-category="HTML">
-
-                <div class="ctn-img"><img src="img/iconos/contratar.png" alt=""></div>
-                <span>Encuentre a la persona ideal para realizar el trabajo que necesita</span><br>
-                <div class="cont-button">
-                    <a href="/secciones/trabajos.html">Buscar</a>
-                </div>
-            </div>
-
-            <div class="post" data-category="JS">
-
-                <div class="ctn-img"><img src="img/iconos/buscartrabajo.png" alt=""></div>
-                <span>Publique su perfil y encuentre el trabajo que busca</span><br>
-                <div class="cont-button">
-                    <a href="secciones/crear.html">Publicar</a>
-                </div>
-            </div>
-
-            <div class="post" data-category="JS NODEJS VUE">
-
-                <div class="ctn-img"><img src="img/iconos/contactenos.png" alt=""></div>
-                <span>Contacte con nosotros ante cualquier duda</span><br>
-                <div class="cont-button">
-                    <a href="secciones/contacto.html">Contactar</a>
-                </div>
-            </div>           
-
-        </div>
-
+    <div class="column">
+        <h4>Experiencia</h4>
+        <a href="#">Desarrollador Frontend - FANIoT</a>
+        <a href="#">Líder del equipo de desarrollo en ModBox - E.P.E.T N°1</a>
     </div>
-
-
-    <div class="container-footer">	
-
-        <footer>
-            <div class="logo-footer">
-                <img src="img/logo-magtimus-pro-.png" alt="">
-            </div>
-
-            <div class="redes-footer">
-                <a href="#"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
-                <a href="#"><i class="fab fa-google-plus-g icon-redes-footer"></i></a>
-                <a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
-            </div>
-
-            <hr>
-            <h4>© 2023 Nahuel Salinas - Todos los Derechos Reservados</h4>
-        </footer>
-
+    <div class="column">
+        <h4>Sobre Nosotros</h4>
+        <a href="#">Blogs</a>
+        <a href="#">Canales</a>
+        <a href="#">Patrocinadores</a>
     </div>
+    <div id="contacto" class="column">
+        <h4>Contacto</h4>
+        <a href="#">+54 3765-019128</a>
+        <a href="#">nahuelllsalinas@gmail.com</a>
+    </div>
+</footer>
 
+<div class="copyright">
+    Copyright © 2024 Equipo de Desarrollo de FindWork. Todos los derechos reservados.
 </div>
-
-    <script src="js/script.js"></script>
 </body>
 </html>
