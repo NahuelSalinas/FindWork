@@ -169,7 +169,7 @@ footer .column > a:hover{
 
 @media (width < 1210px){
     footer{
-        grid-template-columns: 1fr 200px;
+        grid-template-columns: 1fr 16em;
     }
 }
 
@@ -181,8 +181,7 @@ footer .column > a:hover{
 
 @media (width < 900px){
     footer{
-       grid-template-columns: 1fr 150px;
-       width: 100%;
+       grid-template-columns: 1fr 17em;
     }
 }
 
@@ -276,5 +275,11 @@ footer .column > a:hover{
         text-decoration: none;
         color: var(--colorPrincipal);
         padding: 5px 20px;
+    }
+}
+
+@media (width < 500px){
+    footer{
+       grid-template-columns: 1fr 200px;
     }
 }

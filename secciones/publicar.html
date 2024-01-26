@@ -19,14 +19,22 @@
     <title>Publicar | FindWork</title>
 </head>
 <body>
-    <nav>
-        <h3><a class="textoGradiente" href="/secciones/inicio.html">Find<b>Work</b></a></h3>
-        <ul>
-            <li><a class="animated-underline" href="/secciones/inicio.html">Inicio</a></li>
-            <li><a class="animated-underline" href="#contacto">Contacto</a></li>
-            <li><a class="animated-underline" href="">Mi Cuenta</a></li>
-            <li><a id="loginBtn" href="/index.html">Cerrar Sesión</a></li>
-        </ul>
+    <nav class="navbar" id="myTopnav">
+        <button class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </button>
+        <h3><a class="textoGradiente" id="logo" href="/secciones/inicio.html">Find<b>Work</b></a></h3>
+        <div class="nav-items" id="navItems">
+            <ul>
+                <li><a class="animated-underline" href="/secciones/inicio.html">Inicio</a></li>
+                <li><a class="animated-underline" href="#contacto">Contacto</a></li>
+                <!-- <li><a class="animated-underline" href="#publicar">Publicar</a></li> -->
+                <li><a class="animated-underline" href="">Mi Cuenta</a></li>
+                <li><a id="loginBtn" href="/index.html">Cerrar Sesión</a></li>
+            </ul>
+        </div>
     </nav>
     <br><br>
     <span class="blur"></span>
@@ -130,5 +138,6 @@
 </div>
 
 <script src="/js/slider.js"></script>
+<script src="/js/navbar.js"></script>
 </body>
 </html>

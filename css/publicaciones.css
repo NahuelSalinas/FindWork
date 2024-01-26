@@ -44,48 +44,50 @@ form{
 
     /* CATEGORÍAS */
 
-    .categorias{
-        background-color: #140a0a;
-        width: 80%;
+    .categorias {
+        width: 90%;
         margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-
-    .categorias button{
-        float: left;
-        font-size: 1em;
+    
+    .categorias button {
+        font-size: 0.8em; /* Reducir el tamaño de fuente para ocupar menos espacio */
         text-transform: uppercase;
         letter-spacing: .1em;
         transition: all .3s ease-in-out;
         cursor: pointer;
         border: none;
-        margin-inline: .5em;
-        margin-bottom: .8em;
-        border-radius: .2em;
-        padding: .2em .5em;
+        margin: 0.3em;
+        padding: 0.2em 0.5em;
         background-color: #0f3834;
         color: var(--colorPrincipal);
         opacity: .8;
+        border-radius: .2em;
+        white-space: nowrap; /* Evita que los botones se envuelvan al final de la línea */
     }
-
-    .categorias button:hover{
+    
+    .categorias button:hover {
         opacity: 1;
         transition: .3s;
         transform: scale(1.01);
         background-color: #0e4640;
         box-shadow: 0 0 .4em #1f1e1e;
     }
-
-    .categorias #otro{
+    
+    .categorias #otro {
         background-color: transparent;
         border: .2em solid #0e4640;
         padding: .1em .4em;
     }
-
-    .categorias #otro:hover{
+    
+    .categorias #otro:hover {
         border: .2em solid #255040;
         letter-spacing: .3em;
         transition: .3s;
     }
+    
 
     /* PUBLICACIONES */
 
@@ -260,10 +262,6 @@ form{
 @media (max-width: 742px){
     form{
         width: 80%;
-    }
-
-    .categorias{
-        margin-top: -4em;
     }
 
     .publicaciones{
