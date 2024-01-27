@@ -15,6 +15,7 @@
     color: var(--colorPrincipal);
     margin-left: 8em;
     margin-top: 12em;
+    margin-bottom: 22em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -220,22 +221,26 @@
       }
 }
 
-@media (max-width: 840px){
+@media (max-width: 900px){
   #presentacion{
     color: var(--colorPrincipal);
     margin-top: 18vh;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    width: fit-content;
+    width: 86%;
     margin: auto;
 }
 
     #presentacion::before{
-        left: 5%;
+        left: 25%;
         transform: translateX(-10%);
-        transform: translateY(38%);
+        transform: translateY(44%);
         font-size: 3.5rem;
         }
+
+      #presentacion .image{
+        text-align: center;
+      }
 
       #presentacion img{
         margin-top: 5vh;
