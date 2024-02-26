@@ -19,14 +19,22 @@
     <title>FindWork</title>
 </head>
 <body>
-    <nav>
-        <h3><a class="textoGradiente" href="/index.html">Find<b>Work</b></a></h3>
-        <ul>
-            <li><a class="animated-underline" href="#contacto">Contacto</a></li>
-            <li><a class="animated-underline" href="#servicios">Servicios</a></li>
-            <li><a id="loginBtn" href="/secciones/login.html">Iniciar Sesión</a></li>
-        </ul>
+    <nav class="navbar" id="myTopnav">
+        <button class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </button>
+        <h3><a class="textoGradiente" id="logo" href="/index.html">Find<b>Work</b></a></h3>
+        <div class="nav-items" id="navItems">
+            <ul>
+                <li><a class="animated-underline" href="#contacto">Contacto</a></li>
+                <li><a class="animated-underline" href="#servicios">Servicios</a></li>
+                <li><a id="loginBtn" href="/secciones/login.html">Iniciar Sesión</a></li>
+            </ul>
+        </div>
     </nav>
+    
     <br><br>
     <span class="blur"></span>
     <span class="blur"></span>
@@ -41,8 +49,6 @@
         </div>
     </section>
 
-    <br><br><br>
-
    <section id="servicios">
       <div class="texto">
         <h1 id="gradienteH1">¿Qué ofrecemos?</h1>
@@ -50,7 +56,7 @@
           O bien, ofrece tus servicios como trabajador para que demás personas puedan contratarte.</h2>
       </div>
 
-      <br><br><br>
+      <br><br>
 
       <div class="tarjetas">
         <div class="tarjeta">
@@ -58,7 +64,7 @@
           <span>Publica</span>
           <p>Da a conocer tu habilidad para realizar una labor.</p>
           <br>
-          <button class="draw"></button>
+          <button onclick="window.location.href='/secciones/login.html'" class="draw"></button>
           <br>
         </div>
 
@@ -67,7 +73,7 @@
             <span>Contrata</span>
             <p>Busca y contrata a los mejores profesionales para realizar el trabajo que necesitas.
             <br><br>
-            <button class="draw"></button>
+            <button onclick="window.location.href='/secciones/login.html'" class="draw"></button>
           </div>
       </div>
 
@@ -75,7 +81,7 @@
 
    </section>
 
-   <br><br><br><br><br><br><br><br><br><br><br>
+   <br><br><br>
 
    <footer class="container">
     <span class="blur"></span>
@@ -114,5 +120,8 @@
 <div class="copyright">
     Copyright © 2024 Equipo de Desarrollo de FindWork. Todos los derechos reservados.
 </div>
+
+<script src="js/navbar.js"></script>}
+
 </body>
 </html>

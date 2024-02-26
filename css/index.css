@@ -15,6 +15,7 @@
     color: var(--colorPrincipal);
     margin-left: 8em;
     margin-top: 12em;
+    margin-bottom: 22em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -177,3 +178,143 @@
           border-left-color: transparent;
         }
       }
+
+      /* MOBILE */
+
+@media (max-width: 1130px){
+  #presentacion{
+    color: var(--colorPrincipal);
+    margin-left: 8em;
+    margin-top: 18vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+    #presentacion::before{
+        content: "¡Manos a la obra!";
+        position: absolute;
+        top: 0;
+        left: 40%;
+        transform: translateX(-50%);
+        transform: translateY(50%);
+        font-size: 4rem;
+        font-weight: 400;
+        line-height: 20rem;
+        color: #485783;
+        opacity: 0.2;
+        z-index: -100;
+        }
+
+      #presentacion{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: fit-content;
+        margin: auto;
+      }
+
+      #presentacion img{
+        margin-top: 5vh;
+      }
+
+      #servicios{
+        margin-top: -6vh;
+      }
+}
+
+@media (max-width: 900px){
+  #presentacion{
+    color: var(--colorPrincipal);
+    margin-top: 18vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 86%;
+    margin: auto;
+}
+
+    #presentacion::before{
+        left: 25%;
+        transform: translateX(-10%);
+        transform: translateY(44%);
+        font-size: 3.5rem;
+        }
+
+      #presentacion .image{
+        text-align: center;
+      }
+
+      #presentacion img{
+        margin-top: 5vh;
+      }
+
+      #presentacion .texto{
+        margin-top: 1em;
+      }
+
+      #servicios{
+        margin-top: -6vh;
+      }
+}
+
+@media (max-width: 400px){
+
+  #presentacion::before{
+    left: 9%;
+    transform: translateX(-10%);
+    transform: translateY(22%);
+    font-size: 2.5rem;
+  }
+
+    #presentacion .image{
+      display: flex;
+      justify-content: center;
+      margin-top: 5vh;
+      width: 20%;
+      margin: auto;
+    }
+
+    #presentacion .texto{
+      margin-top: 0em;
+    }
+
+    #presentacion .texto h1{
+      text-indent: 0%;
+      text-align: center;
+    }
+
+    #presentacion .texto h2{
+      text-indent: 0%;
+      text-align: center;
+      font-size: 1em;
+    }
+
+    #presentacion img{
+      width: 12em;
+    }
+
+    #servicios{
+      width: 20em;
+      margin: auto;
+    }
+
+    #servicios .texto{
+      margin-top: 10vh;
+    }
+  
+    #servicios .texto h2{
+      font-size: 1em;
+      width: 96%;
+      text-align: justify;
+    }
+
+  .tarjetas{
+    width: fit-content;
+    display: inline;
+    margin-bottom: 2vh;
+  }
+
+  .tarjetas .tarjeta{
+    width: 90%;
+    
+    margin-bottom: 2em;
+  }
+}

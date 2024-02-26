@@ -4,6 +4,7 @@
     --colorPrincipal: #eff3f2;
     --colorSecundario: #362f2f;
     --colorTerciario: #144357;
+    --colorNav: #0e171bc5;
 }
 
 html{
@@ -11,7 +12,6 @@ html{
 }
 
 *{
-    /* font-family: 'Sora', sans-serif; */
     font-family: 'Inter Tight', sans-serif;
 }
 
@@ -26,59 +26,57 @@ body{
 }
 
 
-nav{
+nav {
     width: 90%;
     display: inline-flex;
     justify-content: space-between;
-    }
-
-    nav a{
+}
+    nav a {
         text-decoration: none;
         margin: 1em;
     }
-    
-    nav h3{
+
+    nav h3 {
         margin-top: .7em;
     }
 
-    nav ul{
+    nav ul {
         list-style: none;
         display: inline-flex;
     }
 
-    nav ul li{
+    nav ul li {
         text-align: center;
         margin-inline: 1em;
         margin-top: 2em;
     }
 
-    nav ul li a{
+    nav ul li a {
         text-decoration: none;
         color: var(--colorPrincipal);
         letter-spacing: .1em;
     }
 
-    #loginBtn{
+    #loginBtn {
         background-color: var(--colorPrincipal);
         color: var(--colorTerciario);
         padding: .5em;
         border-radius: 1.4em;
     }
 
-    #loginBtn:hover{
+    #loginBtn:hover {
         background-color: #0000;
         color: var(--colorPrincipal);
         border: solid .2em var(--colorTerciario);
         transition: .1s;
-        
     }
 
     .animated-underline {
         position: relative;
         text-decoration: none;
-      }
-      
-      .animated-underline::after {
+    }
+
+    .animated-underline::after {
         content: "";
         font-size: .7em;
         position: absolute;
@@ -89,17 +87,17 @@ nav{
         background-color: var(--colorPrincipal);
         transform: scaleX(0);
         transition: transform 0.3s ease;
-      }
+    }
 
-      .animated-underline:hover::after {
+    .animated-underline:hover::after {
         transform: scaleX(1);
-      }
+    }
 
-.textoGradiente{
+.textoGradiente {
     background-image: linear-gradient(45deg, #ece551, #f80dec);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    }
+}
     
 
 footer{
@@ -169,16 +167,119 @@ footer .column > a:hover{
 
 /* SCROLLBAR */
 
-
-
-@media (width < 900px){
+@media (width < 1210px){
     footer{
-        grid-template-columns: 1fr 200px;
+        grid-template-columns: 1fr 16em;
     }
 }
 
-@media (width < 600px){
+@media only screen and (max-width: 1000px){
+    nav{
+        width: 100%;
+    }
+}
+
+@media (width < 900px){
     footer{
-       grid-template-columns: 1fr 150px;
+       grid-template-columns: 1fr 17em;
+    }
+}
+
+@media only screen and (min-width: 861px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .navbar {
+        position: relative;
+        width: 100%;
+    }
+
+    .hamburger {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: .4em;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 1em;
+        z-index: 1000;
+    }
+
+    .navbar.active{
+        height: 100%;
+        background-color: var(--colorNav);
+        transition: .3s;
+    }
+
+    .bar {
+        width: 1.8em;
+        height: .2em;
+        background-color: var(--colorPrincipal);
+        margin: .3em auto;
+        transition: .3s;
+    }
+
+    .navbar.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .navbar.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-items {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: transparent;
+        box-shadow: 0 .1em .3em rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        height: 100%;
+        width: 100%;
+    }
+
+    .navbar.active .hamburger {
+        display: block;
+    }
+
+    .navbar.active .nav-items {
+        display: block;
+    }
+
+    .nav-items ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(1, fr);
+        background-color: var(--colorNav);
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-items ul li {
+        margin-top: 1em;
+        width: fit-content;
+        margin: auto;
+    }
+
+    .nav-items ul li a {
+        display: block;
+        text-decoration: none;
+        color: var(--colorPrincipal);
+        padding: 5px 20px;
+    }
+}
+
+@media (width < 500px){
+    footer{
+       grid-template-columns: 1fr 200px;
     }
 }
