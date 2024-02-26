@@ -206,3 +206,38 @@ form{
         opacity: 1;
         box-shadow: .1em .2em .5em #054e26a1;
     }
+    .popup {
+        display: none;
+        position: fixed;
+        background-image: linear-gradient(to right, #23332b, #0f3834);
+        top:  50%;
+        left:  50%;
+        transform: translate(-50%, -50%);
+        z-index:  1000;
+        /* Añade más estilos según sea necesario */
+        height: 75%;
+        width: 25%;
+      }
+      
+      .contenido-popup {
+        background-image: linear-gradient(to right, #23332b, #0f3834);
+        padding:  20px;
+        border-radius:  5px;
+        color: var(--colorPrincipal);
+        /* Añade más estilos según sea necesario */
+      }
+      
+      #cerrarPopup {
+        position: absolute;
+        top:  10px; /* Ajusta estos valores según sea necesario */
+        right:  10px; /* Ajusta estos valores según sea necesario */
+        background: transparent;
+        
+        border-color: transparent;
+      }
+      
+      #fecha-popup {
+        position: absolute;
+        bottom:  10px; /* Ajusta estos valores según sea necesario */
+        left:  10px; /* Ajusta estos valores según sea necesario */
+      }
