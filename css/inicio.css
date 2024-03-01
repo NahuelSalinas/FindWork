@@ -257,6 +257,7 @@ form{
         transition: .3s;
         box-shadow: 0em 0 1.4em #0b1f27da;
         transform: scale(1.05);
+        padding-inline: 2em;
     }
 
     .acciones img{
