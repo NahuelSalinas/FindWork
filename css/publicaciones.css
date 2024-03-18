@@ -162,53 +162,6 @@ form{
         margin-bottom: .6em;
     }
 
-/*     .publicacion .botones{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 90%;
-        margin: auto;
-        margin-bottom: 1.5em;   
-    }
-
-    .publicacion .botones button{
-        border: .2em solid;
-        border-radius: .3em;
-        background-color: transparent;
-        color: var(--colorPrincipal);
-        margin-left: .5em;
-        letter-spacing: .15em;
-        font-size: .8em;
-        margin: auto;
-        opacity: .8;
-    }
-
-    .publicacion .botones .btn1{
-        border-color: #559b89;
-        padding: .4em 1em;
-    }
-
-    .publicacion .botones .btn1:hover{
-        transition: all .3s ease;
-        background-color: #140a0a;
-        border-color: #140a0a;
-        opacity: 1;
-        box-shadow: .1em .2em .5em #242e29;
-    }
-
-    .publicacion .botones .btn2{
-        border-color: #18a156;
-        padding: .4em .5em;
-    }
-
-    .publicacion .botones .btn2:hover{
-        transition: all .3s ease;
-        background-color: #140a0a;
-        border-color: #140a0a;
-        color: #28b49d;
-        opacity: 1;
-        box-shadow: .1em .2em .5em #054e26a1;
-    } */
-
     /* DROPDOWN */ 
 
     .navigation {

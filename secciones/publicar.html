@@ -48,10 +48,10 @@
         <h3>Datos de su publicación</h3>
         <form action="">
             <div class="input-group flex-nowrap">
-                <input type="text" class="form-control" placeholder="Título de la publicación" aria-describedby="addon-wrapping">
+                <input type="text" class="form-control" placeholder="Título de la publicación" aria-describedby="addon-wrapping" id="title">
               </div>
             <div class="input-group">
-                <textarea class="form-control" placeholder="Descripción (Máx. 300 caracteres)"></textarea>
+                <textarea class="form-control" placeholder="Descripción (Máx. 300 caracteres)" id="description"></textarea>
               </div>
            
             <div class="input-group mb-3">
@@ -59,39 +59,37 @@
               </div>
 
               <div class="input-group">
-                <input type="text" class="form-control" aria-label="Precio" placeholder="Precio del servicio">
+                <input type="text" class="form-control" aria-label="Precio" placeholder="Precio del servicio" id="price">
               </div>
 
               <div class="input-group">
-                <input type="text" class="form-control" aria-label="telefono" placeholder="Número de teléfono">
+                <input type="text" class="form-control" aria-label="telefono" placeholder="Número de teléfono" id="telephoneNumber">
               </div>
 
               <div class="input-group mb-3">
                 <select class="form-select" id="inputGroupSelect01">
                     <option selected>Seleccionar Categoría</option>
-                    <option value="">Albañilería</option>
-                    <option value="">Carpintería</option>
-                    <option value="">Electricidad</option>
-                    <option value="">Fontanería</option>
-                    <option value="">Herrería</option>
-                    <option value="">Jardinería</option>
-                    <option value="">Mecánica</option>
-                    <option value="">Modista</option>
-                    <option value="">Peluquería</option>
-                    <option value="">Pintura</option>
-                    <option value="">Plomería</option>
-                    <option value="">Soldadura</option>
-                    <option value="">Tapicería</option>
-                    <option value="">Técnico de informática</option>
-                    <option value="">Técnico de sonido</option>
-                    <option value="">Vidriería</option>
-                    <option value="">Zapatería</option>
-                    <option value="">Otro (Especificar en el título)</option>
+                    <option value="albañileria">Albañilería</option>
+                    <option value="carpinteria">Carpintería</option>
+                    <option value="electricidad">Electricidad</option>
+                    <option value="fontaneria">Plomería</option>
+                    <option value="herreria">Herrería</option>
+                    <option value="jardineria">Jardinería</option>
+                    <option value="mecanica">Mecánica</option>
+                    <option value="modista">Modista</option>
+                    <option value="peluqueria">Peluquería</option>
+                    <option value="pintura">Pintura</option>
+                    <option value="soldadura">Soldadura</option>
+                    <option value="tapiceria">Tapicería</option>
+                    <option value="tec-informatica">Técnico de informática</option>
+                    <option value="vidrieria">Vidriería</option>
+                    <option value="zapateria">Zapatería</option>
+                    <option value="otro">Otro (Especificar en el título)</option>
                 </select>
               </div>
             
               <div class="btns">
-                <input type="submit" value="Publicar">
+                <input type="submit" value="Publicar" id="btnPost">
                 <input type="reset" value="Borrar">
               </div>
            
@@ -165,6 +163,7 @@
 </div>
 
 <script src="/js/slider.js"></script>
+<script src="/js/publicar.js"></script>
 <script src="/js/navbar.js"></script>
 </body>
 </html>
