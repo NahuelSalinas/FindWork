@@ -1,0 +1,56 @@
+:root{
+    --textColor : #fff;
+}
+
+
+.container {
+    color: var(--textColor);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.profile-header img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+.profile-header h1 {
+    margin: 0;
+}
+.profile-info {
+    margin-bottom: 20px;
+}
+.profile-info h2 {
+    margin-bottom: 10px;
+}
+.profile-info p {
+    margin: 5px 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form label {
+    margin-top: 10px;
+}
+form input, form textarea, form select {
+    padding: 10px;
+    margin-top: 5px;
+}
+form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #45a049;
+}
