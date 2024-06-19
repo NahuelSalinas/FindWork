@@ -2,7 +2,6 @@
     --textColor : #fff;
 }
 
-
 .container {
     color: var(--textColor);
     max-width: 800px;

@@ -255,7 +255,168 @@
       }
 }
 
-@media (max-width: 400px){
+@media (max-width: 770px){
+
+  #presentacion::before{
+    left: 9%;
+    transform: translateX(30%);
+    transform: translateY(30%);
+    font-size: 2.5rem;
+  }
+
+    #presentacion .image{
+      display: flex;
+      justify-content: center;
+      margin-top: 5vh;
+      width: 20%;
+      margin: auto;
+    }
+
+    #presentacion .texto{
+      margin-top: 0em;
+    }
+
+    #presentacion .texto h1{
+      text-indent: 0%;
+      text-align: center;
+    }
+
+    #presentacion .texto h2{
+      text-indent: 0%;
+      text-align: center;
+      margin: auto;
+      font-size: 1.5em;
+    }
+
+    #presentacion img{
+      width: 12em;
+    }
+
+    #servicios{
+      width: 30em;
+      margin: auto;
+    }
+
+    #servicios .texto{
+      margin-top: 10vh;
+    }
+  
+    #servicios .texto h2{
+      font-size: 1.5em;
+      width: 100%;
+      text-align: justify;
+    }
+
+  .tarjetas{
+    width: fit-content;
+    display: inline;
+    margin-bottom: 2vh;
+  }
+
+  .tarjetas .tarjeta{
+    width: 70%;
+    margin-bottom: 2em;
+  }
+}
+
+/* @media (max-width: 900px){
+  #presentacion{
+    color: var(--colorPrincipal);
+    margin-top: 18vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 86%;
+    margin: auto;
+}
+
+    #presentacion::before{
+        left: 25%;
+        transform: translateX(-10%);
+        transform: translateY(44%);
+        font-size: 3.5rem;
+        }
+
+      #presentacion .image{
+        text-align: center;
+      }
+
+      #presentacion img{
+        margin-top: 5vh;
+      }
+
+      #presentacion .texto{
+        margin-top: 1em;
+      }
+
+      #servicios{
+        margin-top: -6vh;
+      }
+} */
+@media (max-width: 520px){
+
+  #presentacion::before{
+    left: 10%;
+    
+    transform: translateY(25%);
+    font-size: 2.5rem;
+  }
+
+    #presentacion .image{
+      display: flex;
+      justify-content: center;
+      margin-top: 5vh;
+      width: 20%;
+      margin: auto;
+    }
+
+    #presentacion .texto{
+      margin-top: 0em;
+    }
+
+    #presentacion .texto h1{
+      text-indent: 0%;
+      text-align: center;
+    }
+
+    #presentacion .texto h2{
+      text-indent: 0%;
+      text-align: center;
+      font-size: 1.3em;
+    }
+
+    #presentacion img{
+      width: 12em;
+    }
+
+    #servicios{
+      width: 25em;
+      margin: auto;
+    }
+
+    #servicios .texto{
+      margin-top: 10vh;
+    }
+
+  
+    #servicios .texto h2{
+      width: 96%;
+      text-align: justify;
+    }
+
+  .tarjetas{
+    width: fit-content;
+    display: inline;
+    margin-bottom: 2vh;
+  }
+
+  .tarjetas .tarjeta{
+    width: 90%;
+    
+    margin-bottom: 2em;
+  }
+}
+
+@media (max-width: 450px){
 
   #presentacion::before{
     left: 9%;
