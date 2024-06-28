@@ -3,21 +3,49 @@
     --colorSecundario: #362f2f;
     --colorTerciario: #144357;
     --bgTarjeta: #64cab4;
+    --colorTextoClaro: #FFFFFF;
+    --bg-Btn-Principal: #006042;
+    --fuente-fino: 300;
+    --fuente-medio: 600;
+    --fuente-grueso: 800;
 }
 
-#gradienteH1{
-  background-image: linear-gradient(45deg, #9209ec, #f0ff67);
+main{
+  width: 80%;
+  margin: auto;
+}
+
+.container-main{
+  width: 60em;
+  margin: auto;
+}
+
+/* Texto */
+
+main .texto{
+  text-align: center;
+}
+
+#bienvenida h3{
+  width: 15em;
+  margin: auto;
+}
+
+#servicios h3{
+  width: 25em;
+  margin: auto;
+}
+
+.gradiente-txt{
+  background-image: linear-gradient(45deg, #E13535, #A4B446);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: 800;
   }
 
 #presentacion{
     color: var(--colorPrincipal);
-    margin-left: 8em;
-    margin-top: 12em;
-    margin-bottom: 22em;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
 }
 
     #presentacion::before{
@@ -36,17 +64,19 @@
         }
 
     .texto h1{
-        text-indent: 1em;
+      background-image: linear-gradient(45deg, #E13535, #A4B446);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 800;
     }
 
-    .texto h2{
-        width: 20em;
-        text-indent: 1.7em;
+    .texto h3{
+        color: var(--colorTextoClaro);   
     }
 
-    .image img{
-        width: 20em;
-        filter: drop-shadow(.5em .4em .5em #051025bb);
+    .container-main #img-index{
+        display: grid;
+        margin: auto;
     }
 
 #servicios .texto{
@@ -80,402 +110,73 @@
         color: var(--colorPrincipal);
         text-align: center;
     }
-    
-    .tarjetas .tarjeta:hover{
-        background-color: var(--bgTarjeta);
-        transition: .6s;
-        color: var(--colorTerciario);
-        box-shadow: 0em .3em .6em #2b0e0ed3;
-    }  
-
-    .tarjetas .tarjeta span{
-        display: block;
-        text-align: center;
-        font-size: 1.5em;
-        padding: .5em;
-    }
-
+  
     .tarjetas button{
-        border: none;
-        width: 7em;
-        height: 1.8em;
-        cursor: pointer;
-        display: block;
-        margin: auto;
-        background-color: transparent;
-        padding: .4em;
-        text-decoration: none;
-        font-weight: bold;
-        color: var(--colorPrincipal);
+      background-color: var(--bg-Btn-Principal);
+      color: var(--colorTextoClaro);
+      font-weight: var(--fuente-medio);
+      padding-inline: 1em;
+      padding-block: .6em;
+      border-radius: 1.5em;
+      border: none;
+      text-decoration: none;
+      width: 8em;
         
     }
 
     .tarjetas button:hover{
         transition: .4s;
-        color: var(--colorSecundario);
+        background-color: var(--colorTerciario);
     }
 
-.draw {
-        overflow: hidden;
-        position: relative;
-      }
-      .draw::before, .draw::after {
-        box-sizing: border-box;
-        position: absolute;
-        border: .15em solid transparent;
-        border-radius: .1em;
-        width: 0;
-        height: 0;
-      }
-      .draw::before {
-        content: '';
-        top: 0;
-        left: 0;
-        border-top-color: #36977a;
-        border-right-color: #00bd74;
-        animation: border 3s infinite;
-      }
-      .draw::after {
-        content: 'Comenzar';
-        bottom: 0;
-        right: 0;
-        animation: border 3s 2s infinite, borderColor 3s 2s infinite;
-      }
-      
-      @keyframes border {
-        0% {
-          width: 10%;
-          height: 0%;
-        }
-        25% {
-          width: 100%;
-          height: 0%;
-        }
-        50% {
-          width: 100%;
-          height: 100%;
-        }
-        100% {
-          width: 100%;
-          height: 100%;
-        }
-      }
-      @keyframes borderColor {
-        0% {
-          border-bottom-color: #118f3b;
-          border-left-color: #11ac6b;
-        }
-        50% {
-          border-bottom-color: #118f3b;
-          border-left-color: #11ac6b;
-        }
-        51% {
-          border-bottom-color: #086627c7;
-          border-left-color: #11ac6b;
-        }
-        100% {
-          border-bottom-color: transparent;
-          border-left-color: transparent;
-        }
-      }
+      /* Responsive */
+@media only screen and (max-width: 1040px){
+    .container-main{
+      max-width: 90%;
+    }
 
-      /* MOBILE */
-
-@media (max-width: 1130px){
-  #presentacion{
-    color: var(--colorPrincipal);
-    margin-left: 8em;
-    margin-top: 18vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-    #presentacion::before{
-        content: "¡Manos a la obra!";
-        position: absolute;
-        top: 0;
-        left: 40%;
-        transform: translateX(-50%);
-        transform: translateY(50%);
-        font-size: 4rem;
-        font-weight: 400;
-        line-height: 20rem;
-        color: #485783;
-        opacity: 0.2;
-        z-index: -100;
-        }
-
-      #presentacion{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        width: fit-content;
-        margin: auto;
-      }
-
-      #presentacion img{
-        margin-top: 5vh;
-      }
-
-      #servicios{
-        margin-top: -6vh;
-      }
-}
-
-@media (max-width: 900px){
-  #presentacion{
-    color: var(--colorPrincipal);
-    margin-top: 18vh;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    width: 86%;
-    margin: auto;
-}
-
-    #presentacion::before{
-        left: 25%;
-        transform: translateX(-10%);
-        transform: translateY(44%);
-        font-size: 3.5rem;
-        }
-
-      #presentacion .image{
-        text-align: center;
-      }
-
-      #presentacion img{
-        margin-top: 5vh;
-      }
-
-      #presentacion .texto{
-        margin-top: 1em;
-      }
-
-      #servicios{
-        margin-top: -6vh;
-      }
-}
-
-@media (max-width: 770px){
-
-  #presentacion::before{
-    left: 9%;
-    transform: translateX(30%);
-    transform: translateY(30%);
-    font-size: 2.5rem;
+    #servicios h3{
+      width: 90%;
+    }
   }
 
-    #presentacion .image{
-      display: flex;
-      justify-content: center;
-      margin-top: 5vh;
-      width: 20%;
-      margin: auto;
+    .tarjetas{
+        justify-content: center;
     }
-
-    #presentacion .texto{
-      margin-top: 0em;
-    }
-
-    #presentacion .texto h1{
-      text-indent: 0%;
-      text-align: center;
-    }
-
-    #presentacion .texto h2{
-      text-indent: 0%;
-      text-align: center;
-      margin: auto;
-      font-size: 1.5em;
-    }
-
-    #presentacion img{
-      width: 12em;
-    }
-
-    #servicios{
-      width: 30em;
-      margin: auto;
-    }
-
-    #servicios .texto{
-      margin-top: 10vh;
-    }
-  
-    #servicios .texto h2{
-      font-size: 1.5em;
-      width: 100%;
-      text-align: justify;
-    }
-
-  .tarjetas{
-    width: fit-content;
-    display: inline;
-    margin-bottom: 2vh;
-  }
-
-  .tarjetas .tarjeta{
-    width: 70%;
-    margin-bottom: 2em;
-  }
-}
-
-/* @media (max-width: 900px){
-  #presentacion{
-    color: var(--colorPrincipal);
-    margin-top: 18vh;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    width: 86%;
-    margin: auto;
-}
-
-    #presentacion::before{
-        left: 25%;
-        transform: translateX(-10%);
-        transform: translateY(44%);
-        font-size: 3.5rem;
-        }
-
-      #presentacion .image{
-        text-align: center;
-      }
-
-      #presentacion img{
-        margin-top: 5vh;
-      }
-
-      #presentacion .texto{
-        margin-top: 1em;
-      }
-
-      #servicios{
-        margin-top: -6vh;
-      }
-} */
-@media (max-width: 520px){
-
-  #presentacion::before{
-    left: 10%;
-    
-    transform: translateY(25%);
-    font-size: 2.5rem;
-  }
-
-    #presentacion .image{
-      display: flex;
-      justify-content: center;
-      margin-top: 5vh;
-      width: 20%;
-      margin: auto;
-    }
-
-    #presentacion .texto{
-      margin-top: 0em;
-    }
-
-    #presentacion .texto h1{
-      text-indent: 0%;
-      text-align: center;
-    }
-
-    #presentacion .texto h2{
-      text-indent: 0%;
-      text-align: center;
-      font-size: 1.3em;
-    }
-
-    #presentacion img{
-      width: 12em;
-    }
-
-    #servicios{
-      width: 25em;
-      margin: auto;
-    }
-
-    #servicios .texto{
-      margin-top: 10vh;
-    }
-
-  
-    #servicios .texto h2{
-      width: 96%;
-      text-align: justify;
-    }
-
-  .tarjetas{
-    width: fit-content;
-    display: inline;
-    margin-bottom: 2vh;
-  }
-
-  .tarjetas .tarjeta{
-    width: 90%;
-    
-    margin-bottom: 2em;
-  }
-}
 
 @media (max-width: 450px){
 
-  #presentacion::before{
-    left: 9%;
-    transform: translateX(-10%);
-    transform: translateY(22%);
-    font-size: 2.5rem;
+  main{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .container-main{
+    width: 90%;
+    margin: auto;
   }
 
-    #presentacion .image{
-      display: flex;
-      justify-content: center;
-      margin-top: 5vh;
-      width: 20%;
-      margin: auto;
-    }
-
-    #presentacion .texto{
-      margin-top: 0em;
-    }
-
-    #presentacion .texto h1{
-      text-indent: 0%;
-      text-align: center;
-    }
-
-    #presentacion .texto h2{
-      text-indent: 0%;
-      text-align: center;
-      font-size: 1em;
-    }
-
-    #presentacion img{
-      width: 12em;
-    }
-
-    #servicios{
-      width: 20em;
-      margin: auto;
-    }
-
-    #servicios .texto{
-      margin-top: 10vh;
-    }
-  
-    #servicios .texto h2{
-      font-size: 1em;
-      width: 96%;
-      text-align: justify;
-    }
+  #servicios h3{
+    width: 100%;
+    margin: auto;
+  }
 
   .tarjetas{
-    width: fit-content;
-    display: inline;
-    margin-bottom: 2vh;
+    display: block;
   }
-
   .tarjetas .tarjeta{
+    padding-bottom: 3em;
+    width: fit-content;
+  }
+  
+  .tarjetas .tarjeta img{
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 350px){
+  #bienvenida h3{
     width: 90%;
-    
-    margin-bottom: 2em;
   }
 }

@@ -2,13 +2,20 @@
     --colorPrincipal: #eff3f2;
     --colorSecundario: #362f2f;
     --colorTerciario: #144357;
+    --colorTextoClaro: #FFFFFF;
+    --colorTextoOpaco: #e0dedebe;
+    --colorInputBg: #79767677;
+    --bg-Btn-Principal: #006042;
+    --fuente-fino: 300;
+    --fuente-medio: 600;
+    --fuente-grueso: 800;
 }
 
 .registro{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     color: var(--colorPrincipal);
-    width: fit-content;
+    width: 20em;
     text-align: center;
     margin: auto;
 }
@@ -19,21 +26,10 @@
     }
 
     form{
-        width: fit-content;
         padding: 2em;
-        /* border-radius: .6em; */
-        border-radius: 1em 1.4em .5em 4em;
-        border: .2em solid;
         margin: auto;
         color: var(--colorPrincipal);
-    }
-
-    form:hover{
-        box-shadow: inset -0.2em -0.3em 1em 
-        rgba(5, 141, 118, 0.747),
-        0.8em  0.8em 1em
-        rgba(0,0,0,.5);
-        transition: .4s;
+        width: 100%;
     }
 
     form h2{
@@ -44,14 +40,15 @@
 
     form input{
         border: none;
+        width: 100%;
         border-radius: .3em;
         padding: .4em .6em;
         margin-bottom: 1em;
+        font-weight: var(--fuente-medio);
     }
 
     form p{
         opacity: .6;
-        font-size: .8em;
     }
 
     form button{
