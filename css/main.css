@@ -12,7 +12,6 @@
     --fuente-fino: 300;
     --fuente-medio: 600;
     --fuente-grueso: 800;
-
 }
 
 html{
@@ -92,7 +91,7 @@ nav {
     #loginBtn {
         background-color: var(--bg-Btn-Principal);
         color: var(--colorTextoClaro);
-        font-weight: 600;
+        font-weight: var(--fuente-medio);
         padding-inline: 1em;
         padding-block: .8em;
         border-radius: 1.4em;
@@ -155,9 +154,9 @@ footer #derecha{
         text-decoration: none;
     }
 
-footer #medio{
-    margin: auto;
-}
+    footer #medio{
+        margin: auto;
+    }
 
     footer #medio input{
         background-color: var(--colorInputBg);

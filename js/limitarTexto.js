@@ -1,7 +1,7 @@
 
 
 var parrafos = document.getElementsByClassName('descripcion-publicacion');
-var longitudMaxima = 35;
+var longitudMaxima = 85;
 
 for (var i = 0; i < parrafos.length; i++) {
     var texto = parrafos[i].innerHTML;
