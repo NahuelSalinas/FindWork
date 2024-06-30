@@ -29,6 +29,20 @@ main{
     padding-left: 1em;
 }
 
+select{
+    background-color: var(--color-Buscador);
+    color: var(--colorTextoOpaco);
+    border: none;
+    padding: .2em;
+    border-radius: .2em;
+    margin-left: 1em;
+    font-weight: var(--fuente-medio);
+}
+
+select option{
+    background-color: var(--colorNav);
+}
+
 h1{
     color: var(--colorTextoAmarillo);
     font-weight: var(--fuente-medio);
@@ -41,7 +55,7 @@ h1{
     width: 21em;
     border-radius: .3em;
     background-color: var(--color-Buscador);
-    box-shadow: 0em .2em 1.5em .1em var(--colorNav);
+    /* box-shadow: 0em .2em 1.5em .1em var(--colorNav); */
 }
 
     .buscador input[type="text"]{
