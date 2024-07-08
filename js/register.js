@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
             };
             console.log(data)
             try {
-                const response = await fetch('http://localhost:8081/api/auth/register', {
+                const response = await fetch('https://5404-2803-9800-94c2-70b4-e8cc-25b1-276d-680c.ngrok-free.app/api/auth/register', {
                     method: 'POST',
                     headers: {
                         'Accept': 'application/json',
