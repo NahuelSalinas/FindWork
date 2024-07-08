@@ -2,7 +2,24 @@
     --colorPrincipal: #eff3f2;
     --colorSecundario: #362f2f;
     --colorTerciario: #144357;
+    --colorNav: #0e171bc5;
+    --color-Buscador: #9999997a;
+    --colorTextoClaro: #FFFFFF;
+    --colorTextoOpaco: #e0dedebe;
+    --colorTextoAmarillo: #FFBF43;
+    --colorTextoVerde: #11AE34;
+    --colorInputBg: #79767677;
+    --bg-Btn-Principal: #006042;
+    --bg-publicacion: #083f2e8a;
+    --fuente-fino: 300;
+    --fuente-medio: 600;
+    --fuente-grueso: 800;
 }
+
+main{
+    width: 80%;
+    margin: auto;
+  }
 
 .containerFormulario{
     width: 36em;
@@ -11,15 +28,20 @@
     display: block;
     justify-content: space-around;
     border-radius: .3em;
-    background-color: var(--colorTerciario);
+    background-color: var(--bg-publicacion);
     color: var(--colorPrincipal);
-    box-shadow: 0em .2em 1.5em  .1em #105c4971;
+    box-shadow: 0em .2em 1.5em  .1em #062c2371;
     margin: auto;
 }
 
+    .containerFormulario input::placeholder{
+        color: var(--colorTextoOpaco);
+    }
+
     .containerFormulario h3{
-        letter-spacing: .1em;
+        letter-spacing: 1px;
         padding: .3em;
+        font-weight: var(--fuente-medio);
     }
 
     .containerFormulario input[type='text']{
@@ -27,7 +49,8 @@
         outline: none;
         margin-bottom: 1em;
         border-radius: .2em;
-
+        background-color: var(--color-Buscador);
+        color: var(--colorTextoOpaco);
     }
 
     .containerFormulario textarea{
@@ -40,6 +63,12 @@
         outline: none;
         border-radius: .2em;
         margin-bottom: 1em;
+        background-color: var(--color-Buscador);
+        color: var(--colorTextoOpaco);
+    }
+
+    .containerFormulario textarea::placeholder{
+        color: var(--colorTextoOpaco);
     }
 
     .containerFormulario select{
@@ -47,15 +76,26 @@
         border-radius: .2em;
         padding: .2em .3em;
         margin-bottom: 1em;
+        background-color: var(--color-Buscador);
+        color: var(--colorTextoOpaco);
+    }
+
+    .containerFormulario select option{
+        color: var(--colorTextoOpaco);
+        background-color: var(--colorNav);
     }
 
     .containerFormulario input[type='file']{
         border: none;
         border-radius: .2em;   
+        background-color: var(--color-Buscador);
+        color: var(--colorTextoOpaco);
     }
 
     .containerFormulario input[type='file']:hover{
         cursor: pointer;
+        background-color: var(--color-Buscador);
+        color: var(--colorTextoOpaco);
     }
 
     .containerFormulario .btns{
@@ -81,4 +121,9 @@
         transition: .4s;
     }
         
-    
+
+@media (max-width: 921px){
+        main{
+          width: 100%;
+        }
+      }

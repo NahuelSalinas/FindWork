@@ -1,39 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 :root{
     --colorPrincipal: #eff3f2;
     --colorSecundario: #362f2f;
     --colorTerciario: #144357;
     --colorNav: #0e171bc5;
+    --colorTextoClaro: #FFFFFF;
+    --colorTextoOpaco: #e0dedebe;
+    --colorInputBg: #79767677;
+    --bg-Btn-Principal: #006042;
+    --fuente-fino: 300;
+    --fuente-medio: 600;
+    --fuente-grueso: 800;
 }
 
 html{
     scroll-behavior: smooth;
 }
 
+/* Importación de la fuente */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/* .manrope-titulo {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+} 
+  
+.manrope-subtitulo {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.manrope-body {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+} */
+
 *{
-    font-family: 'Inter Tight', sans-serif;
+    font-family: "Manrope", sans-serif;
 }
 
 body{
-    background: linear-gradient(to right, #144357, #1b333b, #0a161b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #132126, #0E0810);
 }
 
 .blur{
     position: absolute;
-    box-shadow: 0 0 1000px 50px #1d4ed8;
+    box-shadow: 0 0 1000px 150px #185469;
     z-index: -100;
 }
 
-
 nav {
-    width: 90%;
+    width: 100%;
     display: inline-flex;
     justify-content: space-between;
 }
     nav a {
         text-decoration: none;
         margin: 1em;
+        font-weight: var(--fuente-medio);
     }
 
     nav h3 {
@@ -58,17 +89,19 @@ nav {
     }
 
     #loginBtn {
-        background-color: var(--colorPrincipal);
-        color: var(--colorTerciario);
-        padding: .5em;
+        background-color: var(--bg-Btn-Principal);
+        color: var(--colorTextoClaro);
+        font-weight: var(--fuente-medio);
+        padding-inline: 1em;
+        padding-block: .8em;
         border-radius: 1.4em;
+        text-decoration: none;
     }
 
     #loginBtn:hover {
-        background-color: #0000;
-        color: var(--colorPrincipal);
-        border: solid .2em var(--colorTerciario);
-        transition: .1s;
+        color: var(--colorTextoClaro);
+        background-color: var(--colorTerciario);
+        transition: .4s;
     }
 
     .animated-underline {
@@ -78,7 +111,7 @@ nav {
 
     .animated-underline::after {
         content: "";
-        font-size: .7em;
+        font-size: 1em;
         position: absolute;
         left: 0;
         right: 0;
@@ -99,62 +132,64 @@ nav {
     -webkit-text-fill-color: transparent;
 }
     
+/* Footer Section */
 
 footer{
-    position: relative;
-    display: grid;
-    grid-template-columns: 400px repeat(3, 1fr);
-    gap: 2rem;
+   color: var(--colorTextoOpaco);
+   letter-spacing: .1em;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
 }
 
-footer .column .logo img{
-    max-width: 4em;
-    margin-bottom: 2rem;
+    footer #izquierda img{
+        width: 5vh;
+        margin-right: .3em;
+    }
+
+footer #derecha{
+    text-align: right;
 }
 
-footer .column p{
-    color: #ccc;
-    margin-bottom: 2rem;
-}
+    footer #derecha a{
+        text-decoration: none;
+    }
 
-footer .column .socials{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
+    footer #medio{
+        margin: auto;
+    }
 
-footer .column .socials a{
-    color: #ccc;
-    border: 1px solid #ccc;
-    padding: 5px 10px;
-    font-size: 1.25rem;
-    border-radius: 100%;
-    transition: all 0.3s ease;
-}
+    footer #medio input{
+        background-color: var(--colorInputBg);
+        border: none;
+        border-radius: .2em;
+        margin-bottom: .5em;
+        width: 100%;
+        padding-block: .6em;
+        padding-inline: 1em;
+        color: var(--colorTextoOpaco);
+        font-weight: var(--fuente-medio);
+    }
 
-footer .column .socials a:hover{
-    color: #fff;
-    background-color: #1d4ed8;
-    border-color: #1d4ed8;
-}
+    footer #medio textarea{
+        background-color: var(--colorInputBg);
+        border: none;
+        border-radius: .2em;
+        font-weight: var(--fuente-medio);
+        width: 100%;
+        padding-inline: 1em;
+        color: var(--colorTextoOpaco);
+        resize: none;
+        overflow: hidden;
+    }
 
-footer .column h4{
-    color: #fff;
-    margin-bottom: 2rem;
-    font-size: 1.2rem;
-    font-weight: 500;
-}
+    footer #medio [type="submit"]{
+        background-color: var(--bg-Btn-Principal);
+    }
 
-footer .column > a{
-    display: block;
-    color: #ccc;
-    margin-bottom: 1rem;
-    transition: all 0.3s ease;
-}
-
-footer .column > a:hover{
-    color: #1d4ed8;
-}
+    footer #medio [type="submit"]:hover{
+        background-color: var(--colorTerciario);
+        transition: .4s;
+    }
 
 .copyright{
     max-width: 1200px;
@@ -163,35 +198,65 @@ footer .column > a:hover{
     color: #fff;
     font-size: 0.8rem;
     text-align: center;
+    padding-bottom: 2vh;
 }
 
 /* SCROLLBAR */
 
 @media (width < 1210px){
     footer{
-        grid-template-columns: 1fr 16em;
+        display: grid;
     }
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1070px){
     nav{
         width: 100%;
     }
+
+    main{
+        width: 100%;
+    }
+
+    .container-main{
+        width: fit-content;
+        margin: auto;
+    }
+
+    footer{
+        width: 90%;
+        margin: auto;
+    }
+
+    footer #izquierda{
+        text-align: center;
+    }
+
 }
 
-@media (width < 900px){
+@media (width < 920px){
     footer{
        grid-template-columns: 1fr 17em;
+       text-align: left;
+    }
+
+    footer #izquierda{
+        grid-column: 1 / -1;
+    }
+
+    footer #derecha{
+        text-align: left;
     }
 }
 
-@media only screen and (min-width: 861px) {
+@media only screen and (min-width: 921px) {
     .hamburger {
         display: none;
     }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 920px) {
+
     .navbar {
         position: relative;
         width: 100%;
@@ -278,8 +343,22 @@ footer .column > a:hover{
     }
 }
 
-@media (width < 500px){
+@media (width < 760px){
     footer{
-       grid-template-columns: 1fr 200px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer #izquierda, #medio{
+        text-align: center;
+    }
+
+    footer #izquierda{
+        text-align: center;
+        width: 100%;
+    }
+
+    footer #derecha{
+        text-align: center;
     }
 }

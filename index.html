@@ -26,107 +26,98 @@
 </title>
 </head>
 <body>
-    <nav class="navbar" id="myTopnav">
-        <button class="hamburger" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </button>
-        <h3><a class="textoGradiente" id="logo" href="/index.html">Find<b>Work</b></a></h3>
-        <div class="nav-items" id="navItems">
-            <ul>
-                <li><a class="animated-underline" href="#contacto">Contacto</a></li>
-                <li><a class="animated-underline" href="#servicios">Servicios</a></li>
-                <li><a id="loginBtn" href="/secciones/login.html">Iniciar Sesión</a></li>
-            </ul>
-        </div>
-    </nav>
-    
-    <br><br>
-    <span class="blur"></span>
-    <span class="blur"></span>
-    
-    <section id="presentacion">
-        <div class="texto">
-            <h1 class="textoGradiente">¡Bienvenido a FindWork!</h1>
-            <h2>El lugar donde encuentras a la persona ideal para el trabajo que necesitas.</h2>
-        </div>
-        <div class="image">
-            <img src="img/grupo-de-trabajo.png" alt="Grupo de trabajo colaborando">
-        </div>
-    </section>
+    <main>
+        <nav class="navbar" id="myTopnav">
+            <button class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+            <h3><a class="textoGradiente" id="logo" href="/index.html">FindWork</a></h3>
+            <div class="nav-items" id="navItems">
+                <ul>
+                    <li><a class="animated-underline" href="#contacto">Contacto</a></li>
+                    <li><a class="animated-underline" href="#servicios">Servicios</a></li>
+                    <li><a id="loginBtn" href="/secciones/login.html">Iniciar Sesión</a></li>
+                </ul>
+            </div>
+        </nav>
+        <span class="blur"></span>
+        <br><br>
+        
+          <section class="container-main">
+            <div class="texto" id="bienvenida">
+                <h1 class="gradiente-txt">¡Bienvenido a FindWork!</h1>
+                <h3>El lugar donde los clientes conectan con los trabajadores</h3>
+            </div>
 
-    <section id="servicios">
-        <div class="texto">
-            <h1 id="gradienteH1">¿Qué ofrecemos?</h1>
-            <h2>Encuentra personas calificadas para cada una de las tareas o necesidades que se presenten en tu día a día. 
-                O bien, ofrece tus servicios como trabajador para que demás personas puedan contratarte.
-            </h2>
-        </div>
+            <br><br>
+
+                <img id="img-index" src="img/personas-circular.png" alt="Grupo de trabajo colaborando">
+
+            <br><br>
+
+            <div class="texto" id="servicios">
+                <h1 class="gradiente-txt">¿Conoces nuestros servicios?</h1>
+                <h3>En FindWork te da damos la oportunidad de ofrecer tus servicios de manera gratuita, para que cualquiera pueda acceder a ellos, facilitando tu alcance a más personas y facilitando la vida de tus clientes</h3>
+            </div>
+
+            <br><br>
+
+            <div class="texto">
+                <h1 class="gradiente-txt">¿Qué vas a hacer hoy?</h1>
+
+            </div>
+
+            <br><br>
+
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <img src="img/contrato-index.png" alt="Icono de contratación">
+                    <br><br>
+                    <button onclick="window.location.href='/secciones/login.html'">Contratar</button>
+                </div>
+                
+                <div class="tarjeta">
+                    <img src="img/publicar-index.png" alt="Icono de publicación de servicios">
+                    <br><br>
+                    <button onclick="window.location.href='/secciones/login.html'" >Publicar</button>
+                </div>
+            </div>
+          </section>
+
+            
+        </section>
 
         <br><br>
 
-        <div class="tarjetas">
-            <div class="tarjeta">
-                <img src="img/publicar.png" alt="Icono de publicación de servicios">
-                <span>Publica</span>
-                <p>Da a conocer tus servicios.</p>
-                <br>
-                <button onclick="window.location.href='/secciones/login.html'" class="draw"></button>
-                <br>
+        <footer>
+            <span class="blur"></span>
+            <div id="izquierda">
+                <h3><img src="/img/ico/logo.png" alt="logo-FindWork">FindWork</h3>
+                <p>Si tienes alguna duda o sugerencia, déjanos conocerla.</p>
             </div>
-
-            <div class="tarjeta">
-                <img src="img/contrato.png" alt="Icono de contratación">
-                <span>Contrata</span>
-                <p>Busca y contrata a los mejores profesionales para realizar el trabajo que necesitas.</p>
-                <br>
-                <button onclick="window.location.href='/secciones/login.html'" class="draw"></button>
+            <div id="medio">
+                <form id="contacto" action="" method="post">
+                    <input type="email" name="email" id="email" placeholder="Correo electrónico" required><br>
+                    <input type="text" name="asunto" id="asunto" placeholder="Asunto" required><br>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="7" placeholder="Mensaje" required></textarea><br>
+                    <input type="submit" value="Enviar">
+                </form>
             </div>
-        </div>
-
-        <br><br><br>
-    </section>
-
-    <br><br><br>
-
-    <footer class="container">
-        <span class="blur"></span>
-        <span class="blur"></span>
-        <div class="column">
-            <div class="logo">
-                <img src="img/ico/logo.png" alt="logo de FindWork">
+            <div id="derecha">
+                <p>teamfindwork@gmail.com</p>
+                <p>+54 376 5019128</p>
+                <a href="http://instagram.com">Instagram</a>
+                <a href="http://linkedin.com">LinkedIn</a>
             </div>
-            <p>
-                Información de contacto
-            </p>
-            <div class="socials">
-                <a href="https://www.instagram.com/nahhhhhuel/"><i class="ri-instagram-line"></i></a>
-                <a href="#"><i class="ri-twitter-line"></i></a>
-            </div>
-        </div>
-        <div class="column">
-            <h4>Experiencia</h4>
-            <a href="#">Desarrollador Frontend - FANIoT</a>
-            <a href="#">Líder del equipo de desarrollo en ModBox - E.P.E.T N°1</a>
-        </div>
-        <div class="column">
-            <h4>Sobre Nosotros</h4>
-            <a href="#">Blogs</a>
-            <a href="#">Canales</a>
-            <a href="#">Patrocinadores</a>
-        </div>
-        <div id="contacto" class="column">
-            <h4>Contacto</h4>
-            <a href="tel:+543765019128">+54 3765-019128</a>
-            <a href="mailto:teamfindwork@gmail.com">teamfindwork@gmail.com</a>
-        </div>
-    </footer>
+        </footer>
 
-    <div class="copyright">
-        Copyright © 2024 Equipo de Desarrollo de FindWork. Todos los derechos reservados.
-    </div>
-
+        <div class="copyright">
+            Copyright © 2024 Equipo de Desarrollo de FindWork. Todos los derechos reservados.
+        </div>
+        
+    </main>
     <script src="js/navbar.js"></script>
     <script type="application/ld+json">
         {

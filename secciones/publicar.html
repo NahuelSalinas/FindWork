@@ -20,6 +20,7 @@
     <title>Publicar | FindWork</title>
 </head>
 <body>
+<main>
     <nav class="navbar" id="myTopnav">
         <button class="hamburger" onclick="toggleMenu()">
             <div class="bar"></div>
@@ -124,43 +125,32 @@
 
    <br><br><br><br><br><br><br>
 
-   <footer class="container">
+<footer>
     <span class="blur"></span>
-    <span class="blur"></span>
-    <div class="column">
-        <div class="logo">
-            <img src="/img/ico/logo.png" alt="logo">
-        </div>
-        <p>
-            Información de contacto
-        </p>
-        <div class="socials">
-            <!-- <a href="#"><i class="ri-youtube-line"></i></a> -->
-            <a href="https://www.instagram.com/nahhhhhuel/"><i class="ri-instagram-line"></i></a>
-            <a href="#"><i class="ri-twitter-line"></i></a>
-        </div>
+    <div id="izquierda">
+        <h3><img src="/img/ico/logo.png" alt="logo-FindWork">FindWork</h3>
+        <p>Si tienes alguna duda o sugerencia, déjanos conocerla.</p>
     </div>
-    <div class="column">
-        <h4>Experiencia</h4>
-        <a href="#">Desarrollador Frontend - FANIoT</a>
-        <a href="#">Líder del equipo de desarrollo en ModBox - E.P.E.T N°1</a>
+    <div id="medio">
+        <form id="contacto" action="" method="post">
+            <input type="email" name="email" id="email" placeholder="Correo electrónico" required><br>
+            <input type="text" name="asunto" id="asunto" placeholder="Asunto" required><br>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="7" placeholder="Mensaje" required></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
     </div>
-    <div class="column">
-        <h4>Sobre Nosotros</h4>
-        <a href="#">Blogs</a>
-        <a href="#">Canales</a>
-        <a href="#">Patrocinadores</a>
-    </div>
-    <div id="contacto" class="column">
-        <h4>Contacto</h4>
-        <a href="#">+54 3765-019128</a>
-        <a href="#">teamfindwork@gmail.com</a>
+    <div id="derecha">
+        <p>teamfindwork@gmail.com</p>
+        <p>+54 376 5019128</p>
+        <a href="http://instagram.com">Instagram</a>
+        <a href="http://linkedin.com">LinkedIn</a>
     </div>
 </footer>
 
 <div class="copyright">
     Copyright © 2024 Equipo de Desarrollo de FindWork. Todos los derechos reservados.
 </div>
+</main>
 
 <script src="/js/slider.js"></script>
 <script src="/js/publicar.js"></script>
