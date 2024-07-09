@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
         };
 
         try {
-            const response = await fetch('http://localhost:8081/api/auth/authenticate', {
+            const response = await fetch('https://5404-2803-9800-94c2-70b4-e8cc-25b1-276d-680c.ngrok-free.app/api/auth/authenticate', {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',
