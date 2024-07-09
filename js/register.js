@@ -28,7 +28,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
                 const result = await response.json();
                 console.log(result);
-                // window.location.href = '../secciones/inicio.html';
+                localStorage.setItem("token",result.token)
+                localStorage.setItem("fullname",result.fullName)
+                localStorage.setItem("email",result.email)
+    
+                
+                window.location.href = '../secciones/inicio.html';
             } catch (e) {
                 alert('Datos Incorrectos');
                 console.error(e);
