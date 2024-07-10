@@ -230,14 +230,7 @@ footer #derecha{
 
     footer #izquierda{
         text-align: center;
-    }
-    /* MENSAJE DE EXITO */
-    #medio #success-message {
-        display: none;
-        margin-top: 10px;
-        opacity: 0;
-        transition: opacity 1s ease-in-out;
-    }
+    }   
 
 }
 
