@@ -16,6 +16,15 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/publicar.css">
     <link rel="stylesheet" href="/css/notif.css">
+    <style>
+        #medio #success-message {
+        display: none;
+        text-align: center;
+        font-weight: 600;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    </style>
 
     <title>Publicar | FindWork</title>
 </head>
@@ -138,6 +147,7 @@
             <textarea name="mensaje" id="mensaje" cols="30" rows="7" placeholder="Mensaje" required></textarea><br>
             <input type="submit" value="Enviar">
         </form>
+        <p id="success-message">¡Mensaje enviado con éxito!</p><br>
     </div>
     <div id="derecha">
         <p>teamfindwork@gmail.com</p>
