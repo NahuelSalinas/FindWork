@@ -4,8 +4,9 @@ document.getElementById('contacto').addEventListener('submit', function(e) {
     const email = document.getElementById('email').value;
     const asunto = document.getElementById('asunto').value;
     const mensaje = document.getElementById('mensaje').value;
+    const successMessage = document.getElementById('success-message');
 
-    fetch('https://hook.us1.make.com/sjuwaiaaukgt8c9purquokuqslb9ucky', {
+    fetch('https://hook.us1.make.com/ole1miwbqfl737c98tnuaq6yrem4ae11', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -31,7 +32,19 @@ document.getElementById('contacto').addEventListener('submit', function(e) {
             console.warn('Response is not JSON:', text);
             console.log('Mensaje enviado, pero la respuesta no es JSON');
         }
-        document.getElementById('contacto').reset();     
+        document.getElementById('contacto').reset();
+        successMessage.style.display = 'block';
+        setTimeout(() => {
+            successMessage.style.opacity = '1';
+            successMessage.style.color = 'green';
+        }, 10);
+
+        setTimeout(() => {
+            successMessage.style.opacity = '0';
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+            }, 1000);
+        }, 3000);
     })
     .catch((error) => {
         console.error('Error:', error);
