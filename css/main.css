@@ -88,6 +88,10 @@ nav {
         letter-spacing: .1em;
     }
 
+    #publicar {
+        color: var(--colorTextoAmarillo);
+    }
+
     #loginBtn {
         background-color: var(--bg-Btn-Principal);
         color: var(--colorTextoClaro);
