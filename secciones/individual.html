@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindWork Post Card</title>
+    <link rel="shortcut icon" href="/img/ico/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"/>
+    <link rel="stylesheet" href="/css/individual.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+    <span class="blur"></span>
+    <span class="blur"></span>
+
+    <main>
+        <nav class="navbar" id="myTopnav">
+            <button class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+            <h3><a class="textoGradiente" id="logo" href="/secciones/inicio.html">FindWork</a></h3>
+            <div class="nav-items" id="navItems">
+                <ul>
+                    <li><a class="animated-underline" href="/secciones/inicio.html">Inicio</a></li>
+                    <li><a class="animated-underline" id="publicar" href="/secciones/publicar.html">Publicar</a></li>
+                    <li><a class="animated-underline" href="/secciones/perfil.html">Mi cuenta</a></li>
+                    <li><a id="loginBtn" href="/index.html">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </nav>
+        <span class="blur"></span>
+
+        <div class="post-card">
+            <div class="carousel">
+                <div><a href="image1.jpg" class="popup-link"><img src="https://images.unsplash.com/photo-1720692393334-c2301df7e0c9?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 1"></a></div>
+                <div><a href="image2.jpg" class="popup-link"><img src="https://images.unsplash.com/photo-1720659201108-4efe526b289c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 2"></a></div>
+                <div><a href="image3.jpg" class="popup-link"><img src="https://images.unsplash.com/photo-1720423413643-363310b689e8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 3"></a></div>
+            </div>
+            <div class="post-details">
+                <div class="categories">Category 1, Category 2</div>
+                <h2 class="title">Titulo publicacion</h2>
+                <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum quis ex, quos suscipit fugiat sint 
+                    facere ut dolorum nesciunt ipsa cumque obcaecati iste doloremque iure reprehenderit! Dolor adipisci repellendus sit. 
+                    Ipsum debitis aliquid ducimus blanditiis officiis perferendis ad, eius quasi quidem reiciendis, explicabo sunt, 
+                    consectetur dolorem rerum accusamus obcaecati.</p>
+                <div class="user-profile">
+                    <img src="https://imgs.search.brave.com/F8MdsPVWZ0YMFcjCRg7k3fT0xIK2vDy6gUR3aXjYz0Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZy/ZWVwaWsuY29tLzI1/Ni8xNDkvMTQ5MDcx/LnBuZz9zZW10PWFp/c19oeWJyaWQ" alt="User Profile" class="profile-img">
+                    <div class="user-info">
+                        <p class="user-name">Nombre de usuario</p>
+                        <p class="user-rating">★★★★☆</p>
+                    </div>
+                </div>
+                <button class="contact-btn">Contactar</button>
+            </div>
+        </div>
+
+        <br><br>
+
+        <footer>
+            <span class="blur"></span>
+            <div id="izquierda">
+                <h3><img src="/img/ico/logo.png" alt="logo-FindWork">FindWork</h3>
+                <p>Si tienes alguna duda o sugerencia, déjanos conocerla.</p>
+            </div>
+            <div id="medio">
+                <form id="contacto" action="" method="post">
+                    <input type="email" name="email" id="email" placeholder="Correo electrónico" required><br>
+                    <input type="text" name="asunto" id="asunto" placeholder="Asunto" required><br>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="7" placeholder="Mensaje" required></textarea><br>
+                    <input type="submit" value="Enviar">
+                </form>
+                <p id="success-message">¡Mensaje enviado con éxito!</p><br>
+            </div>
+            <div id="derecha">
+                <p>teamfindwork@gmail.com</p>
+                <p>+54 376 5019128</p>
+                <a href="http://instagram.com">Instagram</a>
+                <a href="http://linkedin.com">LinkedIn</a>
+            </div>
+        </footer>
+
+        <div class="copyright">
+            Copyright © 2024 Equipo de Desarrollo de FindWork. Todos los derechos reservados.
+        </div>
+        
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="/js/slider-individual.js"></script>
+    <script src="/js/contacto.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/slider.js"></script>
+</body>
+</html>

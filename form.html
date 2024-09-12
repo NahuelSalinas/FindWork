@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <style>
+    :root{
+        --bgColor: #758694;
+        --ColorPrincipal: #405D72;
+        --ColorSecundario: #843E59;
+        --fontColor: #FFF8F3;
+
+    }
+
+    *{
+        color: var(--fontColor);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--bgColor);
+    }
+
+    main{
+        background-color: #ff34;
+        padding-top: 3vh;
+        margin: auto;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label, select, input {
+      margin: 10px 0;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    select, option{
+        color: var(--bgColor);
+    }
+
+
+    input[type="button"] {
+      background-color: var(--ColorSecundario);
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 6px;
+    }
+    input[type="button"]:hover {
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.26);
+      scale: 0.99;
+      transition: .3s;
+    }
+    input[type="text"] {
+      padding: 5px;
+      font-size: 16px;
+      color: var(--bgColor);
+    }
+    /* Estilos para el modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0,0.4);
+    }
+    .modal-content {
+      border: none;
+      border-radius: 6px;
+      background-color: var(--bgColor);
+      margin: auto;
+      padding: 20px;
+      width: fit-content;
+    }
+    .close {
+      color: var(--fontColor);
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section>
+        <form onsubmit="return false;">
+            <label for="search">Buscar Lead:</label>
+            <input type="text" id="search" name="search" onkeyup="filterLeads()">
+        
+            <label for="lead">Selecciona el Lead:</label>
+            <select id="lead" name="lead"></select>
+        
+            <input type="button" value="Actualizar Estado" onclick="openModal()">
+          </form>
+        
+          <!-- Modal -->
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <form id="statusForm">
+                <label for="status">Selecciona el Estado:</label>
+                <select id="status" name="status">
+                  <option value="Contactado">Contactado</option>
+                  <option value="Esperando respuesta">Esperando respuesta</option>
+                  <option value="En llamada">En llamada</option>
+                  <option value="Win">Win</option>
+                  <option value="Lose">Lose</option>
+                </select>
+                <input type="button" value="Guardar" onclick="updateStatus()">
+              </form>
+            </div>
+          </div>
+      </section>
+      <section>
+        
+      </section>
+  </main>
+  <script>
+    function openModal() {
+      document.getElementById('myModal').style.display = 'block';
+    }
+
+    function closeModal() {
+      document.getElementById('myModal').style.display = 'none';
+    }
+
+    function updateStatus() {
+      var lead = document.getElementById('lead').value;
+      var status = document.getElementById('status').value;
+      google.script.run.withSuccessHandler(() => {
+        closeModal();
+        google.script.host.close();
+      }).updateStatus(lead, status);
+    }
+
+    function populateLeads(leads) {
+      var leadSelect = document.getElementById('lead');
+      leads.forEach(lead => {
+        var option = document.createElement('option');
+        option.text = lead;
+        option.value = lead;
+        leadSelect.add(option);
+      });
+    }
+
+    function filterLeads() {
+      var input, filter, select, options, i;
+      input = document.getElementById('search');
+      filter = input.value.toLowerCase();
+      select = document.getElementById('lead');
+      options = select.getElementsByTagName('option');
+      for (i = 0; i < options.length; i++) {
+        if (options[i].text.toLowerCase().indexOf(filter) > -1) {
+          options[i].style.display = "";
+        } else {
+          options[i].style.display = "none";
+        }
+      }
+    }
+
+    // Llamar a la función getLeads y pasar el resultado a populateLeads
+    google.script.run.withSuccessHandler(populateLeads).getLeads();
+  </script>
+</body>
+</html>

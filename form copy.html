@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+   <style>
+    :root{
+        --bgColor: #05223a;
+        --ColorPrincipal: #405D72;
+        --ColorSecundario: #843E59;
+        --fontColor: #FFF8F3;
+        --labelColor: #1b130d;
+    }
+
+    *{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--bgColor);
+    }
+
+    main{
+        margin: auto;
+        border: none;
+        width: fit-content;
+        display: grid;
+        background-color: var(--fontColor);
+        padding: 2em;
+        border-radius: 1em;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h1{
+        color: var(--fontColor);
+        text-align: center;
+    }
+
+    .agenda{
+        width: 30vh;
+        display: block;
+    }
+
+    .tarjeta-de-llamada{
+        background-color: var(--ColorPrincipal);
+        color: var(--fontColor);
+        border: none;
+        width: 90%;
+        border-radius: 8px;
+        margin-bottom: 1em;
+        padding: .5em;
+    }
+
+        .tarjeta-de-llamada:hover, button:hover{
+            box-shadow: 0 0 6px black;
+            transition: .3s;
+        }
+
+        .fecha-creacion-llamada{
+            opacity: .7;
+            letter-spacing: 1px;
+        }
+
+        .tarjeta-de-llamada button{
+            border: none;
+            padding-inline: 1.5em;
+            padding-block: .2em;
+            border-radius: 3px;
+            font-weight: 600;
+            background-color: var(--fontColor);
+            color: var(--ColorPrincipal);
+        }
+
+
+        form{
+            margin-left: 1em;
+        }
+        
+        .agenda-ampliada form{
+            color: var(--labelColor);
+        }
+
+        
+   </style>
+</head>
+<body>
+  <br><h1>Gestión de Leads</h1><br>
+  <main>
+    <section class="agenda">
+      <!-- Dropdown -->
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Filtrar por fecha
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#" onclick="sortCards('asc')">Más reciente primero</a></li>
+          <li><a class="dropdown-item" href="#" onclick="sortCards('desc')">Más antiguo primero</a></li>
+        </ul>
+      </div><br>
+
+      <!-- Tarjetas de Llamada -->
+      <div class="tarjetas-de-llamada">
+        <div class="tarjeta-de-llamada">
+          <div class="fecha-agendacion-llamada">
+            <p>12/10/10</p>
+          </div>
+          <div class="lead-llamada">
+            <p>Juan Perez</p>
+          </div>
+          <div class="motivo-llamada">
+            <p>Pendiente de pago</p>
+          </div>
+          <button>Ampliar</button>
+        </div>
+      </div>
+
+      
+      </section class="agenda-ampliada">
+      <section>
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="exampleInputEmail1" class="form-label">UTM Source</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="exampleInputEmail1" class="form-label">UTM Campaign</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="exampleInputEmail1" class="form-label">UTM Term</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="exampleInputEmail1" class="form-label">UTM Content</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Estado</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected></option>
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Aceptar</button>
+        </form>
+      </section>
+  </main>
+
+  <script>
+    // Función para ordenar las tarjetas por fecha
+    function sortCards(order) {
+      const tarjetasContainer = document.querySelector('.tarjetas-de-llamada');
+      const tarjetas = Array.from(tarjetasContainer.querySelectorAll('.tarjeta-de-llamada'));
+
+      tarjetas.sort((a, b) => {
+        const fechaA = new Date(a.querySelector('.fecha-agendacion-llamada p').innerText);
+        const fechaB = new Date(b.querySelector('.fecha-agendacion-llamada p').innerText);
+
+        if (order === 'asc') {
+          return fechaA - fechaB;
+        } else {
+          return fechaB - fechaA;
+        }
+      });
+
+      // Limpiar el contenedor actual y reinsertar las tarjetas ordenadas
+      tarjetas.forEach(tarjeta => tarjetasContainer.appendChild(tarjeta));
+    }
+  </script>
+  
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
