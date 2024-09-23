@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
    
     async function fetchPublications() {
         try {
-            const response = await fetch('http://localhost:8081/api/publication/', {
+            const response = await fetch('https://480f-2803-9800-94c2-88ff-f17e-ae52-2433-d441.ngrok-free.app/api/publication/', {
                 method: 'GET',
                 headers: {
                     'Accept': 'application/json',
