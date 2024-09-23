@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const token = "Bearer " + localStorage.getItem('token') 
         console.log(token)
         try {
-            const response = await fetch('http://localhost:8081/api/publication/make', {
+            const response = await fetch('https://480f-2803-9800-94c2-88ff-f17e-ae52-2433-d441.ngrok-free.app/api/publication/make', {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',
