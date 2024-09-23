@@ -1,0 +1,52 @@
+:root{
+    --colorPrincipal: #eff3f2;
+    --colorSecundario: #362f2f;
+    --colorTerciario: #144357;
+    --bgTarjeta: #19173d;
+    --colorTextoClaro: #FFFFFF;
+    --colorTexto-Opaco: #ffffff8c;
+    --colorTextoAmarillo: #FFBF43;
+    --bg-Btn-Principal: #006042;
+    --bg-Btn-Secundario: #E0A023;
+    --fuente-fino: 300;
+    --fuente-medio: 600;
+    --fuente-grueso: 800;
+  }
+  
+  main{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    transition: .3s;
+  }
+
+  /* HEADER */
+
+  .header{
+    /* background-image: url(/img/contrato-index.png); */
+    background-color: #006042;
+    box-shadow: .1 .1 .1 #000;
+    border-radius: .3em;
+    padding: 3vh 0vh 0vh 3vh;
+  }
+
+  .header img{
+    width: 20vh;
+  }
+
+  .header span{
+    color: var(--colorTextoClaro);
+    font-weight: var(--fuente-medio);
+    font-size: larger;
+    filter: drop-shadow(1px 1px 1px #000000ab);
+  }
+
+  /* DATOS USUARIO */
+
+
+
+@media (max-width: 921px){
+    main{
+      width: 100%;
+    }
+  }
